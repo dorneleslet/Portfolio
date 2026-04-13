@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sistema de Gestão | Detalhes do Projeto</title>
+  <title>Sublime Caixa | Detalhes do Projeto</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -18,29 +18,201 @@
   <main class="section">
     <div class="container">
       <div class="card">
-      <span class="hero-tag"><span class="hero-dot"></span>QA Automation · Cypress · Postman</span>
-      <h1 class="section-title">Sistema de Gestão de Clientes, Serviços, Caixa e Estoque</h1>
-        <p>Este sistema foi desenvolvido para atender às necessidades reais de um salão de beleza, focando na organização e eficiência operacional. Atualmente em uso no salão de beleza e em melhorias e adição de novas funcionalidades.</p>
+      <span class="hero-tag-sublime"><span class="hero-dot-sublime"></span>Projeto Full-Stack · Em Produção</span>
+      <h1 class="section-title">Sublime Caixa - Sistema de Gestão para Salão de Beleza</h1>
+        <p>Sistema interno desenvolvido do zero para atender às necessidades de um salão de beleza real, cobrindo caixa, estoque, clientes e fichas técnicas. Desenvolvido e testado em paralelo - hoje em uso diário pelo cliente.</p>
         <div class="pill-row">
-          <span class="pill pill-amber">Python</span>
-          <span class="pill pill-amber">JavaScript</span>
-          <span class="pill pill-amber">HTML</span>
-          <span class="pill pill-amber">CSS</span>
-          <span class="pill pill-green">Django</span>
-          <span class="pill pill-green">Cypress</span>
-          <span class="pill pill-green">Postman</span>
-          <span class="pill pill-coral">E2E Testing</span>
+          <span class="pill pill-purple">Python · Django</span>
+          <span class="pill pill-purple">JavaScript</span>
+          <span class="pill pill-teal">Cypress E2E</span>
+          <span class="pill pill-teal">Testes de Regressão </span>
+          <span class="pill pill-amber">Postman API</span>
+          <span class="pill pill-amber">Scrum · Kanban</span>
+          <span class="pill pill-coral">PostgreSQL</span>
+          <span class="pill pill-green">Em produção</span>
         </div>
         <br><br>
+        <!-- Status -->
+        <div class="status-bar">
+            <div class="status-dot"></div>
+            <div>
+            <div class="status-text">Sistema ativo e em uso no espaço do cliente</div>
+            <div class="status-sub">Concluído · melhorias e novas funcionalidades em andamento</div>
+            </div>
+        </div>
 
         <br>
-        <h3>Tecnologias Utilizadas</h3>
-        <ul>
+        <h3>Ciclo de Desenvolvimento</h3>
+        <!-- <ul>
           <li><strong>Backend:</strong> Python</li>
           <li><strong>Frontend:</strong> JavaScript, HTML, CSS</li>
-        </ul>
+        </ul> -->
+        <!-- Timeline -->
+        <!-- <p class="section-label">Ciclo de desenvolvimento</p> -->
+        <div class="timeline">
+            <div class="timeline-line"></div>
+
+            <div class="tl-item">
+            <div class="tl-dot">💡</div>
+            <div class="tl-content">
+                <div class="tl-phase">Fase 01</div>
+                <div class="tl-title">Levantamento de requisitos</div>
+                <div class="tl-desc">Entendimento das necessidades do cliente, mapeamento das funcionalidades essenciais e definição do escopo inicial: caixa, estoque, clientes e fichas técnicas.</div>
+            </div>
+            </div>
+
+            <div class="tl-item">
+            <div class="tl-dot">🏗️</div>
+            <div class="tl-content">
+                <div class="tl-phase">Fase 02</div>
+                <div class="tl-title">Desenvolvimento inicial</div>
+                <div class="tl-desc">Início da programação com Django + PostgreSQL no back-end e HTML/CSS/JS no front-end. Foco em estabelecer a base do sistema e os fluxos principais.</div>
+            </div>
+            </div>
+
+            <div class="tl-item">
+            <div class="tl-dot">🧪</div>
+            <div class="tl-content">
+                <div class="tl-phase">Fase 03</div>
+                <div class="tl-title">Desenvolvimento + testes em paralelo</div>
+                <div class="tl-desc">A partir da metade do projeto, os estudos de QA foram incorporados ao ciclo. Desenvolvimento e testes passaram a caminhar juntos, seguindo práticas de Scrum e Kanban. Cada funcionalidade entregue já saía com cobertura de testes.</div>
+            </div>
+            </div>
+
+            <div class="tl-item">
+            <div class="tl-dot">🚀</div>
+            <div class="tl-content">
+                <div class="tl-phase">Fase 04</div>
+                <div class="tl-title">Teste beta em produção</div>
+                <div class="tl-desc">Com as partes críticas estáveis e sem bugs bloqueadores, o sistema foi implantado no espaço do cliente. Surgiram novos requisitos de uso real e alguns bugs de produção foram identificados e corrigidos.</div>
+                <span class="badge-prod">✓ Sistema implantado no cliente</span>
+            </div>
+            </div>
+
+            <div class="tl-item">
+            <div class="tl-dot">✅</div>
+            <div class="tl-content">
+                <div class="tl-phase">Fase 05</div>
+                <div class="tl-title">Estabilização e melhorias contínuas</div>
+                <div class="tl-desc">Sistema 100% funcional em operação diária. Fase atual focada em evolução: novas funcionalidades conforme necessidades do negócio e refinamentos com base no uso real.</div>
+            </div>
+            </div>
+        </div>
         <br>
-        <h3>Qualidade e Testes (QA)</h3>
+        <!-- Stack -->
+        <h3>Stack utilizada</h3>
+        <!-- <p class="section-label">Stack utilizada</p> -->
+        <div class="stack-grid-sublime">
+            <div class="stack-card-sublime">
+            <div class="stack-icon-sublime">🐍</div>
+            <h3>Python · Django</h3>
+            <p>Back-end, rotas, regras de negócio e ORM</p>
+            </div>
+            <div class="stack-card-sublime">
+            <div class="stack-icon-sublime">🎨</div>
+            <h3>HTML · CSS · JS</h3>
+            <p>Front-end dinâmico com formulários e interações</p>
+            </div>
+            <div class="stack-card-sublime">
+            <div class="stack-icon-sublime">🗄️</div>
+            <h3>PostgreSQL</h3>
+            <p>Banco de dados relacional em produção</p>
+            </div>
+            <div class="stack-card-sublime">
+            <div class="stack-icon-sublime">🌲</div>
+            <h3>Cypress</h3>
+            <p>Testes E2E e regressão automatizados</p>
+            </div>
+            <div class="stack-card-sublime">
+            <div class="stack-icon-sublime">📮</div>
+            <h3>Postman</h3>
+            <p>Testes manuais e automatizados de API REST</p>
+            </div>
+            <div class="stack-card-sublime">
+            <div class="stack-icon-sublime">📋</div>
+            <h3>Kanban · Scrum</h3>
+            <p>Organização das demandas e entregas</p>
+            </div>
+            <div class="stack-card-sublime">
+            <div class="stack-icon-sublime">🎲</div>
+            <h3>Chance.js</h3>
+            <p>Geração dinâmica de dados de teste</p>
+            </div>
+            <div class="stack-card-sublime">
+            <div class="stack-icon-sublime">📊</div>
+            <h3>DataTables</h3>
+            <p>Tabelas e relatórios com filtros</p>
+            </div>
+        </div>
+
+        <br>
+        <!-- Estratégia de testes -->
+        <!-- <p class="section-label">Estratégia de testes</p> -->
+        <h3>Estratégia de testes</h3>
+        <div class="strategy-grid">
+            <div class="strat-card">
+            <div class="strat-icon">🎯</div>
+            <h3>Prioridade pelos caminhos críticos</h3>
+            <p>A estratégia partiu da pergunta: "qual parte não pode falhar?". A resposta foi <strong>caixa e estoque</strong> — o caixa por risco de faturamento incorreto, o estoque por risco de vender produtos indisponíveis. Esses módulos foram os primeiros a ter cobertura completa.</p>
+            </div>
+            <div class="strat-card">
+            <div class="strat-icon">📐</div>
+            <h3>Cobertura total intencional</h3>
+            <p>Optei por testar todas as partes do sistema, mesmo indo contra o princípio de que "testar tudo é inviável" — decisão consciente para aplicar na prática cada tipo de teste aprendido. Cobertura 100% foi definida como: todas as funcionalidades funcionando sem erros ou bugs críticos.</p>
+            </div>
+            <div class="strat-card">
+            <div class="strat-icon">🔄</div>
+            <h3>Regressão automatizada</h3>
+            <p>Suíte completa em Cypress cobrindo todos os fluxos de criação, edição e exclusão de cada módulo. Cada teste é independente, com seus próprios dados gerados dinamicamente para garantir repetibilidade e evitar colisão entre testes.</p>
+            </div>
+            <div class="strat-card">
+            <div class="strat-icon">🚦</div>
+            <h3>Smoke test manual no caixa</h3>
+            <p>O smoke test é focado exclusivamente no fluxo de venda: realizar uma venda com serviço e produto sem falhas. Executado manualmente por ser o caminho mais crítico do sistema e o que mais impacta diretamente o negócio do cliente.</p>
+            </div>
+        </div>
+        <br>
+
+        <!-- Tipos de teste -->
+        <!-- <p class="section-label">Tipos de teste aplicados</p> -->
+        <h3>Qualidade e Testes aplicados</h3>
+        <p>Como o foco da minha carreira é voltada para área de QA, este projeto foi o cenário principal para aplicar os seguintes testes:</p>
+
+        <div class="test-types">
+            <div class="tt-card">
+            <div class="tt-label tt-label-purple">Automatizado · Cypress</div>
+            <div class="tt-title">Regressão E2E</div>
+            <div class="tt-desc">Fluxos completos de criação, edição e exclusão em todos os módulos. Cenários positivos e negativos com validação de mensagens de sucesso e erro.</div>
+            <div class="tag-row-sublime">
+                <span class="tag-sublime tag-purple-sublime">data-test</span>
+                <span class="tag-sublime tag-purple-sublime">cy.contains</span>
+                <span class="tag-sublime tag-purple-sublime">should('be.visible')</span>
+            </div>
+            </div>
+            <div class="tt-card">
+            <div class="tt-label tt-label-amber">Manual · Postman</div>
+            <div class="tt-title">Testes de API REST</div>
+            <div class="tt-desc">Validação de status codes (200, 201, 400, 404, 409), regras de negócio, integridade de dados e tratamento de entradas inválidas com environment configurado.</div>
+            <div class="tag-row-sublime">
+                <span class="tag-sublime tag-amber-sublime">status codes</span>
+                <span class="tag-sublime tag-amber-sublime">positivo · negativo</span>
+                <span class="tag-sublime tag-amber-sublime">environment</span>
+            </div>
+            </div>
+            <div class="tt-card">
+            <div class="tt-label tt-label-teal">Manual · Documentado</div>
+            <div class="tt-title">Casos de Teste (CT001–CT035)</div>
+            <div class="tt-desc">Documentação completa com objetivo, pré-condições, passos e resultado esperado para cada cenário. Massa de dados padronizada por módulo.</div>
+            <div class="tag-row-sublime">
+                <span class="tag-sublime tag-teal-sublime">roteiro</span>
+                <span class="tag-sublime tag-teal-sublime">massa de dados</span>
+                <span class="tag-sublime tag-teal-sublime">pré-condições</span>
+            </div>
+            </div>
+        </div>
+        
+
+        <!-- <h3>Qualidade e Testes (QA)</h3>
         <p>Como o foco da minha carreira é voltada para área de QA, este projeto foi o cenário principal para aplicar:</p>
         <ul>
           <li><strong>Casos de Teste:</strong> Criação de casos de teste com todos os fluxos.</li>
@@ -51,7 +223,7 @@
           <li><strong>Testes de Regressão:</strong> Implementação de todos os fluxos listados pelos casos de teste com Cypress.</li>
           
           
-        </ul>
+        </ul> -->
         <br>
         <h3>Funcionalidades e Regras de Negócio</h3>
         <p>O sistema conta com controle de fluxo de caixa com histórico e registros de recibos, cadastro detalhado de clientes com fichas técnicas de procedimentos, gerenciamento de estoque com histórico de entrada e saída de produtos.</p>
@@ -163,6 +335,95 @@
             </ul>
           </div>
         </details>
+        <br>
+        <br>
+        <!-- Destaques técnicos -->
+        <!-- <p class="section-label">Destaques técnicos</p> -->
+        <h3>Destaques técnicos</h3>
+        <div class="card-box-sublime">
+            <div class="hl-item">
+            <div class="hl-dot dot-purple"></div>
+            <div class="hl-content">
+                <h4>Dados dinâmicos e independência entre testes</h4>
+                <p>Cada teste gera seus próprios dados via <code>gerarClientes()</code> com a biblioteca <code>chance.js</code> e <code>Date.now()</code>, garantindo nomes únicos e evitando colisão entre execuções. Isso torna a suíte repetível e confiável sem depender de dados pré-existentes.</p>
+            </div>
+            </div>
+            <div class="hl-item">
+            <div class="hl-dot dot-teal"></div>
+            <div class="hl-content">
+                <h4>Seletores robustos com data-test</h4>
+                <p>Todos os elementos interativos foram marcados com atributos <code>data-test</code> no front-end durante o desenvolvimento, garantindo que mudanças de layout ou estilo não quebrem os testes automatizados.</p>
+            </div>
+            </div>
+            <div class="hl-item">
+            <div class="hl-dot dot-amber"></div>
+            <div class="hl-content">
+                <h4>Congelamento de dados em vendas</h4>
+                <p>Regra de negócio implementada e testada: nomes e preços de serviços e produtos são congelados no momento da venda para que alterações futuras de preço ou nome não afetem o histórico de vendas já registrado.</p>
+            </div>
+            </div>
+            <div class="hl-item">
+            <div class="hl-dot dot-coral"></div>
+            <div class="hl-content">
+                <h4>Melhorias identificadas durante os testes</h4>
+                <p>Durante a automação, foram identificados pontos de melhoria no sistema: substituição de <code>window.confirm()</code> nativo por modais customizados na exclusão de fichas, e adição de mensagem de feedback ao excluir produtos — ambos documentados no código como pontos de evolução.</p>
+            </div>
+            </div>
+        </div>
+        <br>
+        <!-- Aprendizados -->
+        <!-- <p class="section-label">O que aprendi e apliquei</p> -->
+        <h3>O que aprendi e apliquei</h3>
+        <div class="learnings">
+            <div class="learn-card">
+            <div class="learn-num">01</div>
+            <div>
+                <h4>Desenvolvimento full-stack real</h4>
+                <p>Do levantamento de requisitos com o cliente à implementação completa com Django, JavaScript e PostgreSQL.</p>
+            </div>
+            </div>
+            <div class="learn-card">
+            <div class="learn-num">02</div>
+            <div>
+                <h4>Desenvolvimento e QA em paralelo</h4>
+                <p>Aprender a testar enquanto desenvolve muda a forma de escrever código — você já pensa em testabilidade desde o início.</p>
+            </div>
+            </div>
+            <div class="learn-card">
+            <div class="learn-num">03</div>
+            <div>
+                <h4>Estratégia de testes com critério</h4>
+                <p>Definir o que testar primeiro, como garantir cobertura, o que vai para regressão e o que entra no smoke test.</p>
+            </div>
+            </div>
+            <div class="learn-card">
+            <div class="learn-num">04</div>
+            <div>
+                <h4>Testes de API com Postman</h4>
+                <p>Validação de status codes, regras de negócio e integridade de dados em uma API REST real com environment configurado.</p>
+            </div>
+            </div>
+            <div class="learn-card">
+            <div class="learn-num">05</div>
+            <div>
+                <h4>Confiabilidade de testes automatizados</h4>
+                <p>Dados dinâmicos, independência entre testes e seletores estáveis como base para uma suíte que pode ser executada repetidamente.</p>
+            </div>
+            </div>
+            <div class="learn-card">
+            <div class="learn-num">06</div>
+            <div>
+                <h4>Produção como o melhor laboratório</h4>
+                <p>Bugs que aparecem só em uso real ensinam mais do que qualquer ambiente de teste. O beta com o cliente revelou necessidades que não existiam no levantamento inicial.</p>
+            </div>
+            </div>
+        </div>
+
+        <br>
+        <h3>Repositório no GitHub:</h3>
+        <p>
+        <a href="https://github.com/dorneleslet/SublimeCaixa-teste" target="_blank">Você pode ver o projeto clicando aqui</a>
+        </p>
       </div>
     </div>
   </main>
