@@ -16,20 +16,121 @@
 
   <main class="section">
     <div class="container">
-      <h1 class="section-title">Automação com Playwright</h1>
       <div class="card">
-        <p>Este projeto é dedicado ao estudo e prática de automação de testes utilizando o framework Playwright, explorando testes modernos para a web.</p>
-        
-        <h3>Objetivos do Projeto</h3>
-        <ul>
-          <li>Explorar testes cross-browser (Chromium, Firefox, WebKit).</li>
-          <li>Implementar o padrão Page Object Model (POM) para organização.</li>
-          <li>Execução de testes paralelos e geração de relatórios detalhados.</li>
-        </ul>
+      <span class="hero-tag-playwright"><span class="hero-dot-playwright"></span>Test Automation · Playwright</span>
+      <h1 class="section-title">Automação com Playwright</h1>
+        <p>Este projeto é dedicado ao estudo e prática de automação de testes utilizando o framework Playwright, com foco em aprendizado e desenvolvimento pessoal.</p>
+        <div class="pill-row">
+          <span class="pill pill-pink">Playwright</span>
+          <span class="pill pill-pink">JavaScript</span>
+          <span class="pill pill-teal">E2E Testing</span>
+          <span class="pill pill-teal">Happy · Unhappy path</span>
+          <span class="pill pill-amber">Validação de formulários</span>
+          <span class="pill pill-coral">Fluxo de pagamento</span>
+        </div>
+        <br><br>
+        <h3>Fluxo de adesão testado</h3>
+        <!-- <p class="section-label">Fluxo de adesão testado (E2E)</p> -->
+        <div class="funnel">
+          <div class="funnel-step">
+            <div class="funnel-num">PASSO 01</div>
+            <div class="funnel-icon">📦</div>
+            <div class="funnel-title">Seleção de plano</div>
+            <div class="funnel-arrow">›</div>
+          </div>
+          <div class="funnel-step">
+            <div class="funnel-num">PASSO 02</div>
+            <div class="funnel-icon">📅</div>
+            <div class="funnel-title">Frequência de entrega</div>
+            <div class="funnel-arrow">›</div>
+          </div>
+          <div class="funnel-step">
+            <div class="funnel-num">PASSO 03</div>
+            <div class="funnel-icon">👤</div>
+            <div class="funnel-title">Dados pessoais e endereço</div>
+            <div class="funnel-arrow">›</div>
+          </div>
+          <div class="funnel-step">
+            <div class="funnel-num">PASSO 04</div>
+            <div class="funnel-icon">💳</div>
+            <div class="funnel-title">Pagamento</div>
+            <div class="funnel-arrow">›</div>
+          </div>
+          <div class="funnel-step">
+            <div class="funnel-num">PASSO 5</div>
+            <div class="funnel-icon">✅</div>
+            <div class="funnel-title">Confirmação</div>
+          </div>
+        </div>
+        <br>
+        <h3>Cenários automatizados</h3>
+        <!-- Cenários -->
+        <!-- <p class="section-label">Cenários automatizados</p> -->
+        <div class="scen-grid">
+          <div class="scen-card">
+            <div class="scen-type type-happy">Happy Path</div>
+            <div class="scen-title">Adesão com sucesso</div>
+            <div class="scen-desc">Fluxo completo com cartão Visa válido (4242...), dados pessoais e de entrega corretos, finalizando na confirmação de assinatura.</div>
+            <div class="tag-row-playwright">
+              <span class="tag-playwright tag-teal">CT001</span>
+              <span class="tag-playwright tag-teal">fluxo completo</span>
+              <span class="tag-playwright tag-teal">Assinatura confirmada!</span>
+            </div>
+          </div>
+          <div class="scen-card">
+            <div class="scen-type type-unhappy">Unhappy Path</div>
+            <div class="scen-title">Pagamento recusado</div>
+            <div class="scen-desc">Fluxo com cartão Mastercard inválido (saldo insuficiente). Sistema deve bloquear a conclusão e exibir a mensagem de erro de recusa.</div>
+            <div class="tag-row-playwright">
+              <span class="tag-playwright tag-coral">CT002</span>
+              <span class="tag-playwright tag-coral">cartão inválido</span>
+              <span class="tag-playwright tag-coral">Pagamento Recusado</span>
+            </div>
+          </div>
+          <div class="scen-card">
+            <div class="scen-type type-validation">Validação de campos</div>
+            <div class="scen-title">Formulário sem dados</div>
+            <div class="scen-desc">Tentativa de avançar sem preencher dados pessoais e de entrega. Valida que todas as 11 mensagens de erro são exibidas corretamente.</div>
+            <div class="tag-row-playwright">
+              <span class="tag-playwright tag-amber">CT003</span>
+              <span class="tag-playwright tag-amber">11 mensagens de erro</span>
+              <span class="tag-playwright tag-amber">campos obrigatórios</span>
+            </div>
+          </div>
+        </div>
+        <br>
+        <!-- Validações cobertas -->
+        <!-- <p class="section-label">Validações cobertas nos casos de teste</p> -->
+        <h3>Validações cobertas nos casos de teste</h3>
+        <div class="val-grid">
+          <div class="val-card">
+            <div class="val-title">Dados pessoais e endereço</div>
+            <ul class="val-list">
+              <li>Nome completo obrigatório</li>
+              <li>E-mail com formato válido (presença de <code>@</code>)</li>
+              <li>Telefone com formato e comprimento válidos</li>
+              <li>Nome do bebê obrigatório</li>
+              <li>Idade do bebê obrigatória (seleção)</li>
+              <li>CEP com formato válido e busca automática</li>
+              <li>Endereço, número, bairro, cidade e estado obrigatórios</li>
+            </ul>
+          </div>
+          <div class="val-card">
+            <div class="val-title">Pagamento</div>
+            <ul class="val-list">
+              <li>Número do cartão obrigatório e válido</li>
+              <li>Nome no cartão obrigatório</li>
+              <li>Validade no formato <code>MM/AA</code></li>
+              <li>CVV obrigatório e válido</li>
+              <li>CPF do titular obrigatório e válido</li>
+              <li>Recusa de cartão com saldo insuficiente</li>
+              <li>Bloqueio de avanço com dados inválidos</li>
+            </ul>
+          </div>
+        </div>
 
-        <h3>Destaques</h3>
-        <p>Foco em reduzir a instabilidade (flakiness) dos testes e garantir uma execução rápida e confiável em pipelines de CI/CD.</p>
-      </div>
+
+      
     </div>
   </main>
 
