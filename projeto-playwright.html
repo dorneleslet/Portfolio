@@ -4,13 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Automação com Playwright | Detalhes do Projeto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="img/favicondorneleslet.png">
 </head>
 <body>
   <header class="header">
     <nav class="nav container">
-      <a href="index.html" class="logo">Lee.dev</a>
-      <a href="index.html#projetos" class="btn btn-secondary">Voltar</a>
+      <a href="index.html" class="logo"><img src="img/favicondorneleslet.png" alt="Início" class="logo-img"></a>
+      <div class="lang-switcher">
+        <button onclick="changeLang('pt')" class="lang-btn" title="Português">🇧🇷</button>
+        <button onclick="changeLang('en')" class="lang-btn" title="English">🇺🇸</button>
+      </div>
+      <a href="index.html#projetos" class="btn btn-secondary">
+        <span class="lang-pt">Voltar</span>
+        <span class="lang-en">Back</span>
+      </a>
     </nav>
   </header>
 
@@ -18,8 +27,12 @@
     <div class="container">
       <div class="card">
       <span class="hero-tag-playwright"><span class="hero-dot-playwright"></span>Test Automation · Playwright</span>
-      <h1 class="section-title">Automação com Playwright</h1>
-        <p>Este projeto é dedicado ao estudo e prática de automação de testes utilizando o framework Playwright, com foco em aprendizado e desenvolvimento pessoal.</p>
+      <h1 class="section-title">
+        <span class="lang-pt">Automação com Playwright</span>
+        <span class="lang-en">Automation with Playwright</span>
+      </h1>
+        <p class="lang-pt">Este projeto é dedicado ao estudo e prática de automação de testes utilizando o framework Playwright, com foco em aprendizado e desenvolvimento pessoal.</p>
+        <p class="lang-en">This project is dedicated to the study and practice of test automation using the Playwright framework, focusing on learning and personal development.</p>
         <div class="pill-row">
           <span class="pill pill-pink">Playwright</span>
           <span class="pill pill-pink">JavaScript</span>
@@ -29,83 +42,146 @@
           <span class="pill pill-coral">Fluxo de pagamento</span>
         </div>
         <br><br>
-        <h3>Fluxo de adesão testado</h3>
-        <!-- <p class="section-label">Fluxo de adesão testado (E2E)</p> -->
-        <div class="funnel">
-          <div class="funnel-step">
-            <div class="funnel-num">PASSO 01</div>
-            <div class="funnel-icon">📦</div>
-            <div class="funnel-title">Seleção de plano</div>
-            <div class="funnel-arrow">›</div>
+        <h3>
+          <span class="lang-pt">Fluxo de adesão testado</span>
+          <span class="lang-en">Tested enrollment flow</span>
+        </h3>
+        <div class="process-flow">
+          <div class="proc-step">
+            <div class="proc-num">
+              <span class="lang-pt">Passo 01</span><span class="lang-en">Step 01</span>
+            </div>
+            <div class="proc-icon">📦</div>
+            <div class="proc-title">
+              <span class="lang-pt">Seleção de plano</span><span class="lang-en">Plan selection</span>
+            </div>
           </div>
-          <div class="funnel-step">
-            <div class="funnel-num">PASSO 02</div>
-            <div class="funnel-icon">📅</div>
-            <div class="funnel-title">Frequência de entrega</div>
-            <div class="funnel-arrow">›</div>
+          <div class="proc-arrow">→</div>
+          <div class="proc-step">
+            <div class="proc-num">
+              <span class="lang-pt">Passo 02</span><span class="lang-en">Step 02</span>
+            </div>
+            <div class="proc-icon">📅</div>
+            <div class="proc-title">
+              <span class="lang-pt">Frequência</span><span class="lang-en">Frequency</span>
+            </div>
           </div>
-          <div class="funnel-step">
-            <div class="funnel-num">PASSO 03</div>
-            <div class="funnel-icon">👤</div>
-            <div class="funnel-title">Dados pessoais e endereço</div>
-            <div class="funnel-arrow">›</div>
+          <div class="proc-arrow">→</div>
+          <div class="proc-step">
+            <div class="proc-num">
+              <span class="lang-pt">Passo 03</span><span class="lang-en">Step 03</span>
+            </div>
+            <div class="proc-icon">👤</div>
+            <div class="proc-title">
+              <span class="lang-pt">Dados e endereço</span><span class="lang-en">Data and address</span>
+            </div>
           </div>
-          <div class="funnel-step">
-            <div class="funnel-num">PASSO 04</div>
-            <div class="funnel-icon">💳</div>
-            <div class="funnel-title">Pagamento</div>
-            <div class="funnel-arrow">›</div>
+          <div class="proc-arrow">→</div>
+          <div class="proc-step">
+            <div class="proc-num">
+              <span class="lang-pt">Passo 04</span><span class="lang-en">Step 04</span>
+            </div>
+            <div class="proc-icon">💳</div>
+            <div class="proc-title">
+              <span class="lang-pt">Pagamento</span><span class="lang-en">Payment</span>
+            </div>
           </div>
-          <div class="funnel-step">
-            <div class="funnel-num">PASSO 5</div>
-            <div class="funnel-icon">✅</div>
-            <div class="funnel-title">Confirmação</div>
+          <div class="proc-arrow">→</div>
+          <div class="proc-step">
+            <div class="proc-num">
+              <span class="lang-pt">Passo 05</span><span class="lang-en">Step 05</span>
+            </div>
+            <div class="proc-icon">✅</div>
+            <div class="proc-title">
+              <span class="lang-pt">Confirmação</span><span class="lang-en">Confirmation</span>
+            </div>
           </div>
         </div>
         <br>
-        <h3>Cenários automatizados</h3>
+        <h3>
+          <span class="lang-pt">Cenários automatizados</span>
+          <span class="lang-en">Automated scenarios</span>
+        </h3>
         <!-- Cenários -->
         <!-- <p class="section-label">Cenários automatizados</p> -->
         <div class="scen-grid">
           <div class="scen-card">
             <div class="scen-type type-happy">Happy Path</div>
-            <div class="scen-title">Adesão com sucesso</div>
-            <div class="scen-desc">Fluxo completo com cartão Visa válido (4242...), dados pessoais e de entrega corretos, finalizando na confirmação de assinatura.</div>
+            <div class="scen-title">
+              <span class="lang-pt">Adesão com sucesso</span>
+              <span class="lang-en">Successful enrollment</span>
+            </div>
+            <div class="scen-desc">
+              <span class="lang-pt">Fluxo completo com cartão Visa válido (4242...), dados pessoais e de entrega corretos, finalizando na confirmação de assinatura.</span>
+              <span class="lang-en">Full flow with a valid Visa card (4242...), correct personal and delivery data, finishing with subscription confirmation.</span>
+            </div>
             <div class="tag-row-playwright">
               <span class="tag-playwright tag-teal">CT001</span>
-              <span class="tag-playwright tag-teal">fluxo completo</span>
-              <span class="tag-playwright tag-teal">Assinatura confirmada!</span>
+              <span class="tag-playwright tag-teal">
+                <span class="lang-pt">fluxo completo</span><span class="lang-en">full flow</span>
+              </span>
+              <span class="tag-playwright tag-teal">
+                <span class="lang-pt">Assinatura confirmada!</span><span class="lang-en">Subscription confirmed!</span>
+              </span>
             </div>
           </div>
           <div class="scen-card">
             <div class="scen-type type-unhappy">Unhappy Path</div>
-            <div class="scen-title">Pagamento recusado</div>
-            <div class="scen-desc">Fluxo com cartão Mastercard inválido (saldo insuficiente). Sistema deve bloquear a conclusão e exibir a mensagem de erro de recusa.</div>
+            <div class="scen-title">
+              <span class="lang-pt">Pagamento recusado</span>
+              <span class="lang-en">Payment declined</span>
+            </div>
+            <div class="scen-desc">
+              <span class="lang-pt">Fluxo com cartão Mastercard inválido (saldo insuficiente). Sistema deve bloquear a conclusão e exibir a mensagem de erro de recusa.</span>
+              <span class="lang-en">Flow with an invalid Mastercard (insufficient balance). The system must block completion and display the refusal error message.</span>
+            </div>
             <div class="tag-row-playwright">
               <span class="tag-playwright tag-coral">CT002</span>
-              <span class="tag-playwright tag-coral">cartão inválido</span>
-              <span class="tag-playwright tag-coral">Pagamento Recusado</span>
+              <span class="tag-playwright tag-coral">
+                <span class="lang-pt">cartão inválido</span><span class="lang-en">invalid card</span>
+              </span>
+              <span class="tag-playwright tag-coral">
+                <span class="lang-pt">Pagamento Recusado</span><span class="lang-en">Payment Declined</span>
+              </span>
             </div>
           </div>
           <div class="scen-card">
-            <div class="scen-type type-validation">Validação de campos</div>
-            <div class="scen-title">Formulário sem dados</div>
-            <div class="scen-desc">Tentativa de avançar sem preencher dados pessoais e de entrega. Valida que todas as 11 mensagens de erro são exibidas corretamente.</div>
+            <div class="scen-type type-validation">
+              <span class="lang-pt">Validação de campos</span><span class="lang-en">Field validation</span>
+            </div>
+            <div class="scen-title">
+              <span class="lang-pt">Formulário sem dados</span>
+              <span class="lang-en">Empty form</span>
+            </div>
+            <div class="scen-desc">
+              <span class="lang-pt">Tentativa de avançar sem preencher dados pessoais e de entrega. Valida que todas as 11 mensagens de erro são exibidas corretamente.</span>
+              <span class="lang-en">Attempt to proceed without filling in personal and delivery data. Validates that all 11 error messages are correctly displayed.</span>
+            </div>
             <div class="tag-row-playwright">
               <span class="tag-playwright tag-amber">CT003</span>
-              <span class="tag-playwright tag-amber">11 mensagens de erro</span>
-              <span class="tag-playwright tag-amber">campos obrigatórios</span>
+              <span class="tag-playwright tag-amber">
+                <span class="lang-pt">11 mensagens de erro</span><span class="lang-en">11 error messages</span>
+              </span>
+              <span class="tag-playwright tag-amber">
+                <span class="lang-pt">campos obrigatórios</span><span class="lang-en">mandatory fields</span>
+              </span>
             </div>
           </div>
         </div>
         <br>
         <!-- Validações cobertas -->
         <!-- <p class="section-label">Validações cobertas nos casos de teste</p> -->
-        <h3>Validações cobertas nos casos de teste</h3>
+        <h3>
+          <span class="lang-pt">Validações cobertas nos casos de teste</span>
+          <span class="lang-en">Validations covered in test cases</span>
+        </h3>
         <div class="val-grid">
           <div class="val-card">
-            <div class="val-title">Dados pessoais e endereço</div>
-            <ul class="val-list">
+            <div class="val-title">
+              <span class="lang-pt">Dados pessoais e endereço</span>
+              <span class="lang-en">Personal data and address</span>
+            </div>
+            <ul class="val-list lang-pt">
               <li>Nome completo obrigatório</li>
               <li>E-mail com formato válido (presença de <code>@</code>)</li>
               <li>Telefone com formato e comprimento válidos</li>
@@ -114,10 +190,22 @@
               <li>CEP com formato válido e busca automática</li>
               <li>Endereço, número, bairro, cidade e estado obrigatórios</li>
             </ul>
+            <ul class="val-list lang-en">
+              <li>Full name required</li>
+              <li>Valid email format (presence of <code>@</code>)</li>
+              <li>Phone with valid format and length</li>
+              <li>Baby's name required</li>
+              <li>Baby's age required (selection)</li>
+              <li>Valid ZIP code format and automatic lookup</li>
+              <li>Address, number, neighborhood, city, and state required</li>
+            </ul>
           </div>
           <div class="val-card">
-            <div class="val-title">Pagamento</div>
-            <ul class="val-list">
+            <div class="val-title">
+              <span class="lang-pt">Pagamento</span>
+              <span class="lang-en">Payment</span>
+            </div>
+            <ul class="val-list lang-pt">
               <li>Número do cartão obrigatório e válido</li>
               <li>Nome no cartão obrigatório</li>
               <li>Validade no formato <code>MM/AA</code></li>
@@ -126,8 +214,124 @@
               <li>Recusa de cartão com saldo insuficiente</li>
               <li>Bloqueio de avanço com dados inválidos</li>
             </ul>
+            <ul class="val-list lang-en">
+              <li>Card number required and valid</li>
+              <li>Name on card required</li>
+              <li>Expiry in <code>MM/YY</code> format</li>
+              <li>CVV required and valid</li>
+              <li>Cardholder CPF required and valid</li>
+              <li>Card refusal due to insufficient balance</li>
+              <li>Block progression with invalid data</li>
+            </ul>
           </div>
         </div>
+        <br>
+        <!-- Destaques -->
+        <!-- <p class="section-label">Destaques técnicos</p> -->
+        <h3>
+          <span class="lang-pt">Destaques técnicos</span>
+          <span class="lang-en">Technical highlights</span>
+        </h3>
+        <div class="card-box">
+          <div class="hl-item">
+            <div class="hl-dot dot-pink"></div>
+            <div class="hl-content">
+              <h4>
+                <span class="lang-pt">Seletores semânticos com getByRole e getByLabel</span>
+                <span class="lang-en">Semantic selectors with getByRole and getByLabel</span>
+              </h4>
+              <p class="lang-pt">Ao invés de depender apenas de seletores CSS, o Playwright permite usar <code>getByRole('button', { name: '...' })</code> e <code>getByLabel()</code> — mais próximos de como o usuário real interage com a interface e menos frágeis a mudanças de layout.</p>
+              <p class="lang-en">Instead of relying solely on CSS selectors, Playwright allows using <code>getByRole('button', { name: '...' })</code> and <code>getByLabel()</code> — closer to how a real user interacts with the interface and less fragile to layout changes.</p>
+            </div>
+          </div>
+          <div class="hl-item">
+            <div class="hl-dot dot-teal"></div>
+            <div class="hl-content">
+              <h4>
+                <span class="lang-pt">Cobertura de happy e unhappy path no mesmo fluxo</span>
+                <span class="lang-en">Happy and unhappy path coverage in the same flow</span>
+              </h4>
+              <p class="lang-pt">Os dois primeiros testes percorrem o fluxo completo de 5 etapas com dados diferentes — um com cartão válido, outro com cartão recusado. Isso garante que tanto o caminho de sucesso quanto o de falha estão cobertos de ponta a ponta.</p>
+              <p class="lang-en">The first two tests go through the full 5-step flow with different data — one with a valid card, the other with a declined card. This ensures both the success and failure paths are covered end-to-end.</p>
+            </div>
+          </div>
+          <div class="hl-item">
+            <div class="hl-dot dot-amber"></div>
+            <div class="hl-content">
+              <h4>
+                <span class="lang-pt">Validação de 11 mensagens de erro simultâneas</span>
+                <span class="lang-en">Validation of 11 simultaneous error messages</span>
+              </h4>
+              <p class="lang-pt">O terceiro teste verifica de uma vez todas as mensagens de erro do formulário de dados pessoais e endereço, usando <code>expect(...).toBeVisible()</code> para cada campo — garantindo que nenhuma validação foi omitida pelo sistema.</p>
+              <p class="lang-en">The third test checks all error messages in the personal data and address form at once, using <code>expect(...).toBeVisible()</code> for each field — ensuring no validation was omitted by the system.</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <!-- Aprendizados -->
+        <!-- <p class="section-label">O que aprendi e apliquei</p> -->
+        <h3>
+          <span class="lang-pt">O que aprendi e apliquei</span>
+          <span class="lang-en">What I learned and applied</span>
+        </h3>
+        <div class="learnings">
+          <div class="learn-card">
+            <div class="learn-num">01</div>
+            <div>
+              <h4>
+                <span class="lang-pt">Playwright como ferramenta E2E</span>
+                <span class="lang-en">Playwright as an E2E tool</span>
+              </h4>
+              <p class="lang-pt">Automação de fluxos multi-etapa com navegação real em browser, preenchimento de formulários e interações complexas.</p>
+              <p class="lang-en">Automation of multi-step flows with real browser navigation, form filling, and complex interactions.</p>
+            </div>
+          </div>
+          <div class="learn-card">
+            <div class="learn-num">02</div>
+            <div>
+              <h4>
+                <span class="lang-pt">Seletores semânticos</span>
+                <span class="lang-en">Semantic selectors</span>
+              </h4>
+              <p class="lang-pt">Uso de <code>getByRole</code>, <code>getByLabel</code> e <code>getByText</code> para testes mais estáveis e legíveis do que seletores CSS puros.</p>
+              <p class="lang-en">Use of <code>getByRole</code>, <code>getByLabel</code>, and <code>getByText</code> for more stable and readable tests than pure CSS selectors.</p>
+            </div>
+          </div>
+          <div class="learn-card">
+            <div class="learn-num">03</div>
+            <div>
+              <h4>
+                <span class="lang-pt">Documentação de casos de teste</span>
+                <span class="lang-en">Test case documentation</span>
+              </h4>
+              <p class="lang-pt">Escrita de casos formais com objetivo, pré-condições, passos e resultado esperado antes da automação.</p>
+              <p class="lang-en">Writing formal test cases with objective, pre-conditions, steps, and expected outcome before automation.</p>
+            </div>
+          </div>
+          <div class="learn-card">
+            <div class="learn-num">04</div>
+            <div>
+              <h4>
+                <span class="lang-pt">Validação de fluxos de pagamento</span>
+                <span class="lang-en">Payment flow validation</span>
+              </h4>
+              <p class="lang-pt">Teste de cenários com cartão válido e recusado, verificando tanto o caminho de sucesso quanto o tratamento de erro.</p>
+              <p class="lang-en">Testing scenarios with valid and declined cards, verifying both the success path and error handling.</p>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <h3>
+          <span class="lang-pt">Repositório no GitHub:</span>
+          <span class="lang-en">GitHub Repository:</span>
+        </h3>
+        <p>
+        <a href="https://github.com/dorneleslet/automacao-playwright" class="project-link" target="_blank">
+          <span class="lang-pt">Você pode ver o projeto clicando aqui</span>
+          <span class="lang-en">You can see the project by clicking here</span>
+        </a>
+        </p>
 
 
       
@@ -137,5 +341,6 @@
   <footer class="container" style="text-align: center; padding: 2rem 0;">
     <p>&copy; 2026 Letícia Dorneles</p>
   </footer>
+  <script src="js/style.js"></script>
 </body>
 </html>

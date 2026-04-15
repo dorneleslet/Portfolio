@@ -3,26 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lee | Portfólio</title>
+  <title>Letícia Dorneles | Portfólio</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
-
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="img/favicondorneleslet.png">
 </head>
 <body>
   <header class="header">
     <nav class="nav container">
-      <a href="#inicio" class="logo">Lee.dev</a>
+      <a href="#inicio" class="logo"><img src="img/favicondorneleslet.png" alt="Início" class="logo-img"></a>
+
+      <div class="lang-switcher">
+        <button onclick="changeLang('pt')" class="lang-btn" title="Português">🇧🇷</button>
+        <button onclick="changeLang('en')" class="lang-btn" title="English">🇺🇸</button>
+      </div>
 
       <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
         ☰
       </button>
 
       <ul class="nav-links" id="nav-links">
-        <li><a href="#sobre">Sobre mim</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#cursos">Cursos</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#sobre"><span class="lang-pt">Sobre mim</span><span class="lang-en">About me</span></a></li>
+        <li><a href="#projetos"><span class="lang-pt">Projetos</span><span class="lang-en">Projects</span></a></li>
+        <li><a href="#experiencia"><span class="lang-pt">Experiência</span><span class="lang-en">Experience</span></a></li>
+        <li><a href="#cursos"><span class="lang-pt">Cursos</span><span class="lang-en">Courses</span></a></li>
+        <li><a href="#contato"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a></li>
       </ul>
     </nav>
   </header>
@@ -30,147 +35,242 @@
   <main>
     <section id="inicio" class="hero">
       <div class="container hero-content">
-        <!-- <span class="tag tag-title">
-          <span class="dot"></span>
-          QA Junior · Cypress · Postman
-        </span> -->
-        <p class="eyebrow">QA Junior • Cypress • Postman</p>
+        <span class="hero-tag-sublime"><span class="hero-dot-sublime"></span>QA Junior · Cypress · Postman</span>
         <h1>Letícia Dorneles</h1>
-        <p class="hero-text">
+        <p class="hero-text lang-pt">
           Estou construindo minha carreira em QA com foco em testes automatizados,
           garantindo sempre a qualidade nos projetos.
-          Este portfólio reúne minha evolução,
-          projetos e experiência prática.
+        </p>
+        <p class="hero-text lang-en">
+          I am building my career in QA with a focus on automated testing, 
+          always ensuring quality in projects.
         </p>
         <div class="hero-actions">
-          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-          <a href="#contato" class="btn btn-secondary">Entrar em contato</a>
+          <a href="#projetos" class="btn btn-primary"><span class="lang-pt">Ver projetos</span><span class="lang-en">View projects</span></a>
+          <a href="#contato" class="btn btn-secondary"><span class="lang-pt">Entrar em contato</span><span class="lang-en">Get in touch</span></a>
         </div>
       </div>
     </section>
 
     <section id="sobre" class="section">
       <div class="container">
-        <h2 class="section-title">Sobre mim</h2>
+        <h2 class="section-title">
+          <span class="lang-pt">Sobre mim</span>
+          <span class="lang-en">About me</span>
+        </h2>
         <div class="card">
-          <p>
-            Atualmente estou em transição para a área de QA, em busca da minha primeira oportunidade na área.
-            Também desenvolvi um projeto criando soluções para gestão de clientes, serviços, caixa e estoque, para um salão de beleza,
-            utilizando linguagens como <strong>Python</strong> e <strong>JavaScript</strong>, nesse projeto apliquei testes manuais e exploratórios,
-            automação de testes com <strong>Cypress</strong>, validação de APIs com <strong>Postman</strong>, além de análise de fluxos,
-            validação de campos e identificação/correção de bugs.
-          </p>
-          <p>
-            Essa experiência reforçou minha capacidade de pensar como QA, ter atenção aos detalhes, investigar falhas,
-            documentar cenários e colaborar entre frontend e backend para garantir um funcionamento mais estável e intuitivo do sistema.
-            Estou em busca da minha primeira oportunidade como QA sempre disposta a aprender, crescer e desenvolver minha carreira.
-          </p>
+          <div class="lang-pt">
+            <p>Minha jornada na tecnologia foi mais desafiadora do que eu imaginava.</p>
+            <p>No início, tudo parecia simples e consegui evoluir rapidamente. Mas, conforme avancei nos estudos e projetos, enfrentei desafios maiores — e junto com eles vieram dúvidas e inseguranças. Ainda assim, escolhi continuar.</p>
+            <p>Persisti, enfrentei cada dificuldade e concluí projetos completos, trabalhando com <strong>Python</strong>, <strong>Django</strong>, <strong>JavaScript</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>Cypress</strong>, <strong>Playwright</strong> e <strong>Postman</strong>.</p>
+            <p>Foi nessa jornada que conheci a área de <strong>Quality Assurance (QA)</strong>, e me identifiquei profundamente. Hoje, gosto de analisar sistemas com olhar crítico, identificar falhas e pensar como usuária.</p>
+            <p>Tenho experiência prática com testes manuais (funcionais, exploratórios e regressão), criação de casos de teste e validação de regras de negócio. Também foco em <strong>testes automatizados</strong> com Cypress e <strong>testes de API</strong> com Postman.</p>
+            <p>Este é só o começo 🚀</p>
+          </div>
+          <div class="lang-en">
+            <p>My journey in technology has been more challenging than I imagined.</p>
+            <p>At first, everything seemed simple and I evolved quickly. But as I advanced in my studies and projects, I faced bigger challenges — and with them came doubts and insecurities. Still, I chose to continue.</p>
+            <p>I persisted, faced every difficulty, and completed full projects working with <strong>Python</strong>, <strong>Django</strong>, <strong>JavaScript</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>Cypress</strong>, <strong>Playwright</strong>, and <strong>Postman</strong>.</p>
+            <p>It was during this journey that I discovered <strong>Quality Assurance (QA)</strong>, and I deeply identified with it. Today, I enjoy analyzing systems with a critical eye, identifying flaws, and thinking like a user.</p>
+            <p>I have practical experience with manual testing (functional, exploratory, and regression), creating test cases, and validating business rules. I also focus on <strong>automated testing</strong> with Cypress and <strong>API testing</strong> with Postman.</p>
+            <p>This is just the beginning 🚀</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="projetos" class="section">
       <div class="container">
-        <h2 class="section-title">Projetos em destaque</h2>
+        <h2 class="section-title">
+          <span class="lang-pt">Projetos em destaque</span>
+          <span class="lang-en">Featured Projects</span>
+        </h2>
         <div class="grid">
           <a href="projeto-gestao.html" class="project-link">
             <article class="card project-card">
-              <h3>Sistema de Gestão de Clientes, Serviços, Caixa e Estoque</h3>
-              <p>
+              <h3>
+                <span class="lang-pt">Sistema de Gestão de Clientes, Caixa e Estoque</span>
+                <span class="lang-en">Client, Cashier, and Inventory Management System</span>
+              </h3>
+              <p class="lang-pt">
                 Este sistema foi desenvolvido na necessidade de gerir fichas de clientes, histórico de vendas, controle de estoque
                 para melhor gerenciamento e organização da empresa. Projeto em evolução pensado para uso em negócio real.
+              </p>
+              <p class="lang-en">
+                Developed to manage client files, sales history, and inventory control for business organization. 
+                An evolving project designed for real-world business use.
               </p>
             </article>
           </a>
 
           <a href="projeto-playwright.html" class="project-link">
             <article class="card project-card">
-              <h3>Automação com Playwright</h3>
-              <p>
+              <h3>
+                <span class="lang-pt">Automação com Playwright</span>
+                <span class="lang-en">Automation with Playwright</span>
+              </h3>
+              <p class="lang-pt">
                 Este projeto contém testes automatizados desenvolvidos com Playwright com foco em aprendizado e desenvolvimento pessoal.
+              </p>
+              <p class="lang-en">
+                This project contains automated tests developed with Playwright focusing on learning and personal development.
               </p>
             </article>
           </a>
 
           <a href="projeto-gherkin.html" class="project-link">
             <article class="card project-card">
-              <h3>Automação de Testes com Cypress + Cucumber BDD</h3>
-              <p>
+              <h3>
+                <span class="lang-pt">Automação com Cypress + Cucumber BDD</span>
+                <span class="lang-en">Cypress + Cucumber BDD Automation</span>
+              </h3>
+              <p class="lang-pt">
                 Projeto desenvolvido para aprendizado em criação de cenários de testes no BDD com Gherkin.
+              </p>
+              <p class="lang-en">
+                Project developed to learn how to create test scenarios using BDD with Gherkin.
               </p>
             </article>
           </a>
 
-          <a href="projeto.html" class="project-link">
-            <article class="card project-card">
-              <h3>Teste</h3>
-              <p>
-                Projeto Teste
-              </p>
-            </article>
-          </a>
+          
         </div>
       </div>
     </section>
 
     <section id="experiencia" class="section">
       <div class="container">
-        <h2 class="section-title">Experiência profissional</h2>
+        <h2 class="section-title">
+          <span class="lang-pt">Experiência profissional</span>
+          <span class="lang-en">Professional Experience</span>
+        </h2>
         <div class="card">
-          <h3>Marketing, conteúdo e web developer</h3>
+          <h3>
+            <span class="lang-pt">Marketing, conteúdo e web developer</span>
+            <span class="lang-en">Marketing, Content, and Web Developer</span>
+          </h3>
           <span class="tag">Espaço Sublime - Salão de cabeleireiro</span>
-          <p>
-            Atuação principal com social media, criação e edição de vídeos. <br>
-            Com a necessidade de gerir o caixa, estoque e gestão de clientes, desenvolvi um sistema web interno
-            para gestão de caixa, estoque, cadastro de clientes e fichas técnicas, fazendo o uso de linguagens como Python, JavaScript,
-            HTML e CSS no desenvolvimento da aplicação. No desenvolvimento do sistema vi a oportunidade para iniciar
-            meus estudos na área de QA e colocar em prática os aprendizados. <br>
-            Neste projeto foram feitos planeamento e execução de testes manuais e automatizados, incluindo elaboração de plano de testes e casos de teste. <br>
-            Automação de testes com Cypress, cobrindo fluxos funcionais da aplicação. <br>
-            Validação de APIs com Postman. <br>
-            Utilização de Git e GitHub para controlo de versão e gestão do código. <br>
-            Aplicação de metodologias ágeis, com uso predominante de Kanban (e conhecimento de Scrum) para organização e acompanhamento das tarefas.
-          </p>
+          <div class="lang-pt">
+            <p>
+              Atuação principal com social media, criação e edição de vídeos. <br>
+              Com a necessidade de gerir o caixa, estoque e gestão de clientes, desenvolvi um sistema web interno
+              para gestão de caixa, estoque, cadastro de clientes e fichas técnicas, fazendo o uso de linguagens como Python, JavaScript,
+              HTML e CSS no desenvolvimento da aplicação. No desenvolvimento do sistema vi a oportunidade para iniciar
+              meus estudos na área de QA e colocar em prática os aprendizados. <br>
+              Neste projeto foram feitos planeamento e execução de testes manuais e automatizados, incluindo elaboração de plano de testes e casos de teste. <br>
+              Automação de testes com Cypress, cobrindo fluxos funcionais da aplicação. <br>
+              Validação de APIs com Postman. <br>
+              Utilização de Git e GitHub para controlo de versão e gestão do código. <br>
+              Aplicação de metodologias ágeis, com uso predominante de Kanban (e conhecimento de Scrum) para organização e acompanhamento das tarefas.
+            </p>
+          </div>
+          <div class="lang-en">
+            <p>
+              Main focus on social media, video creation, and editing. <br>
+              To manage cash flow, inventory, and clients, I developed an internal web system for business management using Python, JavaScript, HTML, and CSS. This development process was the catalyst for starting my studies in QA. <br>
+              In this project, manual and automated tests were planned and executed, including the creation of test plans and test cases. <br>
+              Test automation with Cypress, covering the application's functional flows. <br>
+              API validation with Postman. <br>
+              Use of Git and GitHub for version control and code management. <br>
+              Application of agile methodologies, predominantly Kanban (with Scrum knowledge) for task organization.
+            </p>
+          </div>
+          <a href="projeto-gestao.html" class="badge-prod-port project-link">
+            <span class="lang-pt">Você pode ver mais sobre esse projeto aqui</span>
+            <span class="lang-en">You can read more about this project here</span>
+          </a>
         </div>
         <br>
         <div class="card">
-          <h3>Analista de TI Trainee</h3>
+          <h3>
+            <span class="lang-pt">Analista de TI Trainee</span>
+            <span class="lang-en">IT Analyst Trainee</span>
+          </h3>
           <span class="tag">Primetek Computadores</span>
-          <p>
-            Atendimento e suporte técnico de primeiro nível via telefone, chat e e-mail. <br>
-            Abertura, acompanhamento e encerramento de chamados. <br>
-            Gerenciamento de usuários e permissões via Active Directory. <br>
-            Contato com clientes para aplicação de surveys e acompanhamento de chamados. <br>
-            Criação de base de conhecimento e documentação dos processos do departamento. <br>
-          </p>
+          <div class="lang-pt">
+            <p>
+              Atendimento e suporte técnico de primeiro nível via telefone, chat e e-mail. <br>
+              Abertura, acompanhamento e encerramento de tickets. <br>
+              Gerenciamento de usuários e permissões via Active Directory. <br>
+              Contato com clientes para aplicação de surveys e acompanhamento de chamados. <br>
+              Criação de base de conhecimento e documentação dos processos do departamento.
+            </p>
+          </div>
+          <br>
+          <div class="lang-en">
+            <p>
+              First-level technical support and service via phone, chat, and email. <br>
+              Opening, monitoring, and closing tickets. <br>
+              User and permission management via Active Directory. <br>
+              Customer contact for surveys and ticket follow-ups. <br>
+              Creation of a knowledge base and documentation of department processes.
+            </p>
+          </div>
         </div>
         <br>
         <div class="card">
-          <h3>Engenharia de Vestibulares</h3>
+          <h3>
+            <span class="lang-pt">Engenharia de Vestibulares</span>
+            <span class="lang-en">Exam Engineering</span>
+          </h3>
           <span class="tag">Grupo Olimpo</span>
-          <p>
-            Desenvolvimento de planilhas automatizadas com VBA para gerar correções de provas e simulados das unidades. <br>
-            Organização de mapas de sala e logística de aplicação de avaliações em múltiplas unidades do Grupo Olimpo. <br>
-          </p>
+          <div class="lang-pt">
+            <p>
+              Desenvolvimento de planilhas automatizadas com VBA para gerar correções de provas e simulados das unidades. <br>
+              Organização de mapas de sala e logística de aplicação de avaliações em múltiplas unidades do Grupo Olimpo.
+            </p>
+          </div>
+          <br>
+          <div class="lang-en">
+            <p>
+              Development of automated spreadsheets with VBA to generate corrections for exams and mock tests. <br>
+              Organization of room maps and logistics for exam application across multiple units.
+            </p>
+          </div>
         </div>
         <br>
         <div class="card">
-          <h3> Auxiliar Administrativo</h3>
+          <h3>
+            <span class="lang-pt">Auxiliar Administrativo</span>
+            <span class="lang-en">Administrative Assistant</span>
+          </h3>
           <span class="tag">Inspetoria São João Bosco</span>
-          <p>
-            Atendimento ao público e suporte nas rotinas administrativas. <br>
-            Apoio aos departamentos de Financeiro e RH. <br>
-          </p>
+          <div class="lang-pt">
+            <p>
+              Atendimento ao público e suporte nas rotinas administrativas. <br>
+              Apoio aos departamentos de Financeiro e RH.
+            </p>
+          </div>
+          <br>
+          <div class="lang-en">
+            <p>
+              Public service and support in administrative routines. <br>
+              Support for the Finance and HR departments.
+            </p>
+          </div>
         </div>
         <br>
         <div class="card">
-          <h3>Estágio de TI</h3>
+          <h3>
+            <span class="lang-pt">Estágio de TI</span>
+            <span class="lang-en">IT Internship</span>
+          </h3>
           <span class="tag">Ephar - Instituto Analítico de Excelência Farmacêutica</span>
-          <p>
-            Apoio na manutenção de computadores e segurança de dados. <br>
-            Gerenciamento de backups e suporte ao pacote Office. <br>
-            Auxílio básico em redes e infraestrutura. <br>
-          </p>
+          <div class="lang-pt">
+            <p>
+              Apoio na manutenção de computadores e segurança de dados. <br>
+              Gerenciamento de backups e suporte ao pacote Office. <br>
+              Auxílio básico em redes e infraestrutura.
+            </p>
+          </div>
+          <br>
+          <div class="lang-en">
+            <p>
+              Support in computer maintenance and data security. <br>
+              Backup management and Office suite support. <br>
+              Basic assistance in networking and infrastructure.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -179,37 +279,88 @@
 
     <section id="cursos" class="section">
       <div class="container">
-        <h2 class="section-title">Cursos e certificações</h2>
+        <h2 class="section-title">
+          <span class="lang-pt">Cursos e certificações</span>
+          <span class="lang-en">Courses and Certifications</span>
+        </h2>
         <div class="grid">
           <div class="card">
-            <h3>Formação Acadêmica</h3>
+            <h3>
+              <span class="lang-pt">Formação Acadêmica</span>
+              <span class="lang-en">Academic Background</span>
+            </h3>
             <span class="tag">UniCambury | 2016 - 2018</span>
-            <p>Gestão em Tecnologia da Informação</p>
+            <p class="lang-pt">Gestão em Tecnologia da Informação</p>
+            <p class="lang-en">Information Technology Management</p>
+          </div>
+
+          <div class="card">
+            <h3>
+              <span class="lang-pt">Qualidade de Software</span>
+              <span class="lang-en">Software Quality</span>
+            </h3>
+            <p class="lang-pt">Princípios e fundamentos dos testes de software, técnicas de teste (baseadas em especificação e estruturais), cobertura de código e suas limitações, TDD, mocks e boas práticas de testes, qualidade do código de teste, estratégias para testes em sistemas reais e legados, cultura de qualidade e métricas em equipes.</p>
+            <p class="lang-en">Principles and fundamentals of software testing, testing techniques (specification-based and structural), code coverage and its limitations, TDD, mocks and best testing practices, test code quality, strategies for testing real and legacy systems, quality culture and team metrics.</p>
           </div>
 
           <div class="card">
             <h3>Jenkins</h3>
-            <p>Estudos voltados para integração contínua, automatização de pipelines com qualidade de código e deploy seguro.</p>
+            <p class="lang-pt">Estudos voltados para integração contínua, automatização de pipelines com qualidade de código e deploy seguro.</p>
+            <p class="lang-en">Studies focused on continuous integration, pipeline automation with code quality and secure deployment.</p>
           </div>
 
           <div class="card">
             <h3>Cypress</h3>
-            <p>Desenvolvimento de código com foco em testes E2E.</p>
+            <p class="lang-pt">Desenvolvimento de código com foco em testes E2E.</p>
+            <p class="lang-en">Code development with a focus on E2E testing.</p>
           </div>
 
           <div class="card">
-            <h3>Git e GitHub</h3>
-            <p>Utilizando versionamento Git na IDE, compartilhando e colaborando em projetos.</p>
+            <h3>
+              <span class="lang-pt">Git e GitHub</span>
+              <span class="lang-en">Git and GitHub</span>
+            </h3>
+            <p class="lang-pt">Utilizando versionamento Git na IDE, compartilhando e colaborando em projetos.</p>
+            <p class="lang-en">Using Git versioning in the IDE, sharing and collaborating on projects.</p>
           </div>
 
           <div class="card">
             <h3>Quality Assurance</h3>
-            <p>Criação de plano de testes e gestão de bugs.</p>
+            <p class="lang-pt">Criação de plano de testes e gestão de bugs.</p>
+            <p class="lang-en">Test plan creation and bug management.</p>
           </div>
 
           <div class="card">
             <h3>Postman</h3>
-            <p>Desenvolvimento e criação de testes de APIs Rest.</p>
+            <p class="lang-pt">Desenvolvimento e criação de testes de APIs Rest.</p>
+            <p class="lang-en">Development and creation of REST API tests.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="idiomas" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="lang-pt">Línguas</span>
+          <span class="lang-en">Languages</span>
+        </h2>
+        <div class="grid">
+          <div class="card">
+            <h3>
+              <span class="lang-pt">Português</span>
+              <span class="lang-en">Portuguese</span>
+            </h3>
+            <p class="lang-pt">Nativo</p>
+            <p class="lang-en">Native</p>
+          </div>
+          <div class="card">
+            <h3>
+              <span class="lang-pt">Inglês</span>
+              <span class="lang-en">English</span>
+            </h3>
+            <p class="lang-pt">Em andamento</p>
+            <p class="lang-en">In progress</p>
           </div>
         </div>
       </div>
@@ -217,23 +368,33 @@
 
     <section id="contato" class="section">
       <div class="container">
-        <h2 class="section-title">Contato</h2>
+        <h2 class="section-title">
+          <span class="lang-pt">Contato</span>
+          <span class="lang-en">Contact</span>
+        </h2>
         <div class="card">
           <p>
             <strong>Email:</strong> 
-            <a href="mailto:dornelesleticia1@gmail.com?subject=Contato%20pelo%20portfólio&body=Olá, vi seu portfólio e gostaria de falar com você.">
-              dornelesleticia1@gmail.com
-            </a>
+            <span class="lang-pt">
+              <a href="mailto:dornelesleticia1@gmail.com?subject=Contato%20pelo%20portfólio&body=Olá, vi seu portfólio e gostaria de falar com você." class="project-link">
+                dornelesleticia1@gmail.com
+              </a>
+            </span>
+            <span class="lang-en">
+              <a href="mailto:dornelesleticia1@gmail.com?subject=Contact%20from%20portfolio&body=Hello,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk%20to%20you." class="project-link">
+                dornelesleticia1@gmail.com
+              </a>
+            </span>
           </p>
           <p>
             <strong>GitHub:</strong> 
-            <a href="https://github.com/dorneleslet" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/dorneleslet" class="project-link" target="_blank" rel="noopener noreferrer">
               github.com/dorneleslet
             </a>
           </p>
           <p>
             <strong>LinkedIn:</strong> 
-            <a href="https://linkedin.com/in/dornelesleticia/" target="_blank" rel="noopener noreferrer" >
+            <a href="https://linkedin.com/in/dornelesleticia/" class="project-link" target="_blank" rel="noopener noreferrer" >
               linkedin.com/in/dornelesleticia/
             </a>
           </p>

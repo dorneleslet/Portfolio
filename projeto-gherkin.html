@@ -6,12 +6,20 @@
   <title>Automação Cypress + Cucumber | Detalhes do Projeto</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="img/favicondorneleslet.png">
 </head>
 <body>
   <header class="header">
     <nav class="nav container">
-      <a href="index.html" class="logo">Lee.dev</a>
-      <a href="index.html#projetos" class="btn btn-secondary">Voltar</a>
+      <a href="index.html" class="logo"><img src="img/favicondorneleslet.png" alt="Início" class="logo-img"></a>
+      <div class="lang-switcher">
+        <button onclick="changeLang('pt')" class="lang-btn" title="Português">🇧🇷</button>
+        <button onclick="changeLang('en')" class="lang-btn" title="English">🇺🇸</button>
+      </div>
+      <a href="index.html#projetos" class="btn btn-secondary">
+        <span class="lang-pt">Voltar</span>
+        <span class="lang-en">Back</span>
+      </a>
     </nav>
   </header>
 
@@ -20,9 +28,14 @@
     <div class="container">
       <div class="card">
       <span class="hero-tag"><span class="hero-dot"></span>Test Automation · Cypress · Cucumber</span>
-      <h1 class="section-title">Automação de Testes com Cypress + Cucumber BDD</h1>
-        <p>Testes end-to-end do site Adopet — cobrindo os fluxos de cadastro, login, e contato com adotante, aplicando boas práticas de BDD (Behavior Driven Development)
+      <h1 class="section-title">
+        <span class="lang-pt">Automação de Testes com Cypress + Cucumber BDD</span>
+        <span class="lang-en">Test Automation with Cypress + Cucumber BDD</span>
+      </h1>
+        <p class="lang-pt">Testes end-to-end do site Adopet — cobrindo os fluxos de cadastro, login, e contato com adotante, aplicando boas práticas de BDD (Behavior Driven Development)
           para descrever comportamentos e cenários de teste de forma clara para times de negócio e técnicos.</p>
+        <p class="lang-en">End-to-end testing of the Adopet website — covering registration, login, and contact flows, applying BDD (Behavior Driven Development) 
+          best practices to describe behaviors and test scenarios clearly for both business and technical teams.</p>
         <div class="pill-row">
           <span class="pill pill-green">Cypress</span>
           <span class="pill pill-green">Cucumber</span>
@@ -32,100 +45,134 @@
           <span class="pill pill-coral">E2E Testing</span>
         </div>
         <br><br>
-        <h3>Processo de trabalho</h3>
-        <!-- <ul>
-          <li>&#10003; Inicialmente, realizei testes manuais (exploratórios e funcionais) para entender o comportamento do sistema. A partir disso, modelei cenários de teste em Gherkin e evoluí para a automação utilizando Cypress integrado ao Cucumber.</li>
-          <li>&#10003; Escrita de cenários de teste no padrão Gherkin (Given, When, Then)</li>
-          <li>&#10003; Implementação de Step Definitions conectando Gherkin ao código</li>
-          <li>&#10003; Automação de fluxos completos (E2E)</li>
-          <li>&#10003; Testes de login, cadastro e contato</li>
-          <li>&#10003; Organização dos testes seguindo boas práticas de legibilidade</li>
-        </ul> -->
+        <h3>
+          <span class="lang-pt">Processo de trabalho</span>
+          <span class="lang-en">Work process</span>
+        </h3>
         <!-- Processo -->
         <!-- <p class="section-label">Processo de trabalho</p> -->
         <div class="process-flow">
           <div class="proc-step">
-            <div class="proc-num">Fase 01</div>
+            <div class="proc-num">
+              <span class="lang-pt">Fase 01</span><span class="lang-en">Phase 01</span>
+            </div>
             <div class="proc-icon">🔍</div>
-            <div class="proc-title">Teste exploratório</div>
-            <div class="proc-desc">Navegação livre para entender o sistema e identificar os comportamentos existentes</div>
+            <div class="proc-title">
+              <span class="lang-pt">Teste exploratório</span><span class="lang-en">Exploratory testing</span>
+            </div>
+            <div class="proc-desc">
+              <span class="lang-pt">Navegação livre para entender o sistema e identificar os comportamentos existentes</span>
+              <span class="lang-en">Free navigation to understand the system and identify existing behaviors</span>
+            </div>
           </div>
           <div class="proc-arrow">→</div>
           <div class="proc-step">
-            <div class="proc-num">Fase 02</div>
+            <div class="proc-num">
+              <span class="lang-pt">Fase 02</span><span class="lang-en">Phase 02</span>
+            </div>
             <div class="proc-icon">📋</div>
-            <div class="proc-title">Teste funcional</div>
-            <div class="proc-desc">Validação estruturada dos fluxos e mapeamento dos cenários a serem automatizados</div>
+            <div class="proc-title">
+              <span class="lang-pt">Teste funcional</span><span class="lang-en">Functional testing</span>
+            </div>
+            <div class="proc-desc">
+              <span class="lang-pt">Validação estruturada dos fluxos e mapeamento dos cenários a serem automatizados</span>
+              <span class="lang-en">Structured validation of flows and mapping of scenarios to be automated</span>
+            </div>
           </div>
           <div class="proc-arrow">→</div>
           <div class="proc-step">
-            <div class="proc-num">Fase 03</div>
+            <div class="proc-num">
+              <span class="lang-pt">Fase 03</span><span class="lang-en">Phase 03</span>
+            </div>
             <div class="proc-icon">⚙️</div>
-            <div class="proc-title">Automação BDD</div>
-            <div class="proc-desc">Escrita dos cenários em Gherkin e implementação das step definitions em Cypress</div>
+            <div class="proc-title">
+              <span class="lang-pt">Automação BDD</span><span class="lang-en">BDD Automation</span>
+            </div>
+            <div class="proc-desc">
+              <span class="lang-pt">Escrita dos cenários em Gherkin e implementação das step definitions em Cypress</span>
+              <span class="lang-en">Writing scenarios in Gherkin and implementing step definitions in Cypress</span>
+            </div>
           </div>
         </div>
 
         <br>
-        <h3>Stack utilizada</h3>
+        <h3>
+          <span class="lang-pt">Stack utilizada</span>
+          <span class="lang-en">Tech stack</span>
+        </h3>
         <!-- Stack -->
         <!-- <p class="section-label">Stack utilizada</p> -->
         <div class="stack-grid">
           <div class="stack-card">
-            <div class="stack-icon">🌲</div>
+            <div class="stack-icon">💻</div>
             <h3>Cypress</h3>
-            <p>Framework de testes E2E com execução em browser real e feedback instantâneo</p>
+            <p class="lang-pt">Framework de testes E2E com execução em browser real e feedback instantâneo</p>
+            <p class="lang-en">E2E testing framework with real browser execution and instant feedback</p>
           </div>
           <div class="stack-card">
-            <div class="stack-icon">🥒</div>
+            <div class="stack-icon">✳️</div>
             <h3>Cucumber</h3>
-            <p>Integração via @badeball/cypress-cucumber-preprocessor para executar features Gherkin</p>
+            <p class="lang-pt">Integração via @badeball/cypress-cucumber-preprocessor para executar features Gherkin</p>
+            <p class="lang-en">Integration via @badeball/cypress-cucumber-preprocessor to execute Gherkin features</p>
           </div>
           <div class="stack-card">
             <div class="stack-icon">📝</div>
             <h3>Gherkin</h3>
-            <p>Linguagem natural para descrever cenários com Given / When / Then</p>
+            <p class="lang-pt">Linguagem natural para descrever cenários com Given / When / Then</p>
+            <p class="lang-en">Natural language to describe scenarios with Given / When / Then</p>
           </div>
         </div> 
 
         <br>
 
-        <h3>Decisões técnicas e desafios</h3>
+        <h3>
+          <span class="lang-pt">Decisões técnicas e desafios</span>
+          <span class="lang-en">Technical decisions and challenges</span>
+        </h3>
         <!-- Desafios -->
         <!-- <p class="section-label">Decisões técnicas & desafios</p> -->
         <div class="card-box">
           <div class="challenge-item">
             <div class="ch-marker ch-green"></div>
             <div class="ch-content">
-              <h4>Testes estáveis sem cy.wait</h4>
-              <p>Usei <code>.should('be.visible')</code> combinado com <code>timeout</code> nos asserts de mensagens de erro, evitando esperas fixas e tornando os testes mais resilientes a variações de latência.</p>
+              <h4>
+                <span class="lang-pt">Testes estáveis sem cy.wait</span>
+                <span class="lang-en">Stable tests without cy.wait</span>
+              </h4>
+              <p class="lang-pt">Usei <code>.should('be.visible')</code> combinado com <code>timeout</code> nos asserts de mensagens de erro, evitando esperas fixas e tornando os testes mais resilientes a variações de latência.</p>
+              <p class="lang-en">Used <code>.should('be.visible')</code> combined with <code>timeout</code> in error message asserts, avoiding fixed waits and making tests more resilient to latency variations.</p>
             </div>
           </div>
           <div class="challenge-item">
             <div class="ch-marker ch-green"></div>
             <div class="ch-content">
-              <h4>Seletores robustos com data-test</h4>
-              <p>Priorizei atributos <code>data-test</code> em vez de classes CSS ou textos visíveis, garantindo que mudanças de layout não quebrem os testes desnecessariamente.</p>
+              <h4>
+                <span class="lang-pt">Seletores robustos com data-test</span>
+                <span class="lang-en">Robust selectors with data-test</span>
+              </h4>
+              <p class="lang-pt">Priorizei atributos <code>data-test</code> em vez de classes CSS ou textos visíveis, garantindo que mudanças de layout não quebrem os testes desnecessariamente.</p>
+              <p class="lang-en">Prioritized <code>data-test</code> attributes instead of CSS classes or visible text, ensuring that layout changes do not break tests unnecessarily.</p>
             </div>
           </div>
           <div class="challenge-item">
             <div class="ch-marker ch-coral"></div>
             <div class="ch-content">
-              <h4>Fragilidade na tela de contato</h4>
-              <p>A página de contato não segue o padrão <code>data-test</code> do restante do sistema. Os seletores usam IDs genéricos (<code>#name</code>, <code>#phone</code>), o que torna essa parte mais suscetível a quebras — identificado e documentado como ponto de melhoria.</p>
+              <h4>
+                <span class="lang-pt">Fragilidade na tela de contato</span>
+                <span class="lang-en">Fragility in the contact screen</span>
+              </h4>
+              <p class="lang-pt">A página de contato não segue o padrão <code>data-test</code> do restante do sistema. Os seletores usam IDs genéricos (<code>#name</code>, <code>#phone</code>), o que torna essa parte mais suscetível a quebras — identificado e documentado como ponto de melhoria.</p>
+              <p class="lang-en">The contact page does not follow the <code>data-test</code> standard of the rest of the system. Selectors use generic IDs (<code>#name</code>, <code>#phone</code>), making this part more susceptible to breakage — identified and documented as an improvement point.</p>
             </div>
           </div>
         </div>
 
         <br>
 
-        <h3>O que aprendi e apliquei</h3>
-        <!-- <ul>
-          <li>&#10003; Importância de testes estáveis e não flaky</li>
-          <li>&#10003; Como estruturar testes legíveis usando BDD</li>
-          <li>&#10003; Boas práticas de automação E2E</li>
-          <li>&#10003; Pensamento crítico na identificação de falhas reais do sistema</li>
-        </ul> -->
+        <h3>
+          <span class="lang-pt">O que aprendi e apliquei</span>
+          <span class="lang-en">What I learned and applied</span>
+        </h3>
 
         <!-- Aprendizados -->
         <!-- <p class="section-label">O que aprendi e apliquei</p> -->
@@ -133,44 +180,70 @@
           <div class="learn-card">
             <div class="learn-num">01</div>
             <div>
-              <h4>Testes exploratórios como base</h4>
-              <p>Entender o sistema de forma livre antes de automatizar garante cenários mais realistas e completos.</p>
+              <h4>
+                <span class="lang-pt">Testes exploratórios como base</span>
+                <span class="lang-en">Exploratory testing as a base</span>
+              </h4>
+              <p class="lang-pt">Entender o sistema de forma livre antes de automatizar garante cenários mais realistas e completos.</p>
+              <p class="lang-en">Understanding the system freely before automating ensures more realistic and complete scenarios.</p>
             </div>
           </div>
           <div class="learn-card">
             <div class="learn-num">02</div>
             <div>
-              <h4>Linguagem Gherkin</h4>
-              <p>Descrever cenários com Given, When e Then aproxima a especificação do negócio da automação.</p>
+              <h4>
+                <span class="lang-pt">Linguagem Gherkin</span>
+                <span class="lang-en">Gherkin language</span>
+              </h4>
+              <p class="lang-pt">Descrever cenários com Given, When e Then aproxima a especificação do negócio da automação.</p>
+              <p class="lang-en">Describing scenarios with Given, When, and Then brings business specification closer to automation.</p>
             </div>
           </div>
           <div class="learn-card">
             <div class="learn-num">03</div>
             <div>
-              <h4>Step definitions reutilizáveis</h4>
-              <p>Conectar os passos Gherkin ao JavaScript com parâmetros dinâmicos, mantendo organização e reuso.</p>
+              <h4>
+                <span class="lang-pt">Step definitions reutilizáveis</span>
+                <span class="lang-en">Reusable step definitions</span>
+              </h4>
+              <p class="lang-pt">Conectar os passos Gherkin ao JavaScript com parâmetros dinâmicos, mantendo organização e reuso.</p>
+              <p class="lang-en">Connecting Gherkin steps to JavaScript with dynamic parameters, maintaining organization and reuse.</p>
             </div>
           </div>
           <div class="learn-card">
             <div class="learn-num">04</div>
             <div>
-              <h4>Estabilidade de testes</h4>
-              <p>Identificar e corrigir testes flaky, substituindo esperas fixas por asserts condicionais e timeouts.</p>
+              <h4>
+                <span class="lang-pt">Estabilidade de testes</span>
+                <span class="lang-en">Test stability</span>
+              </h4>
+              <p class="lang-pt">Identificar e corrigir testes flaky, substituindo esperas fixas por asserts condicionais e timeouts.</p>
+              <p class="lang-en">Identifying and fixing flaky tests, replacing fixed waits with conditional asserts and timeouts.</p>
             </div>
           </div>
           <div class="learn-card">
             <div class="learn-num">05</div>
             <div>
-              <h4>Análise crítica do sistema</h4>
-              <p>Reconhecer inconsistências no front-end, como a ausência de <code>data-test</code>, e documentá-las como riscos de manutenção.</p>
+              <h4>
+                <span class="lang-pt">Análise crítica do sistema</span>
+                <span class="lang-en">Critical system analysis</span>
+              </h4>
+              <p class="lang-pt">Reconhecer inconsistências no front-end, como a ausência de <code>data-test</code>, e documentá-las como riscos de manutenção.</p>
+              <p class="lang-en">Recognizing inconsistencies in the front-end, such as the absence of <code>data-test</code>, and documenting them as maintenance risks.</p>
             </div>
           </div>
         </div>
 
         <br>
-        <h3>Repositório no GitHub:</h3>
+        <h3>
+          <span class="lang-pt">Repositório no GitHub:</span>
+          <span class="lang-en">GitHub Repository:</span>
+        </h3>
         <p>
-        <a href="https://github.com/dorneleslet/automacao-cypress" target="_blank">Você pode ver o projeto clicando aqui</a>
+        <a href="https://github.com/dorneleslet/automacao-cypress" class="project-link" target="_blank">
+          <span class="lang-pt">Você pode ver o projeto clicando aqui</span>
+          <span class="lang-en">You can see the project by clicking here</span>
+        </a>
         </p>
       </div>
     </div>
@@ -179,5 +252,6 @@
   <footer class="container" style="text-align: center; padding: 2rem 0;">
     <p>&copy; 2026 Letícia Dorneles</p>
   </footer>
+  <script src="js/style.js"></script>
 </body>
 </html>

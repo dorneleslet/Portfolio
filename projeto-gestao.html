@@ -6,21 +6,36 @@
   <title>Sublime Caixa | Detalhes do Projeto</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="img/favicondorneleslet.png">
 </head>
 <body>
   <header class="header">
     <nav class="nav container">
-      <a href="index.html" class="logo">Lee.dev</a>
-      <a href="index.html#projetos" class="btn btn-secondary">Voltar</a>
+      <a href="index.html" class="logo"><img src="img/favicondorneleslet.png" alt="Início" class="logo-img"></a>
+      <div class="lang-switcher">
+        <button onclick="changeLang('pt')" class="lang-btn" title="Português">🇧🇷</button>
+        <button onclick="changeLang('en')" class="lang-btn" title="English">🇺🇸</button>
+      </div>
+      <a href="index.html#projetos" class="btn btn-secondary">
+        <span class="lang-pt">Voltar</span>
+        <span class="lang-en">Back</span>
+      </a>
     </nav>
   </header>
 
   <main class="section">
     <div class="container">
       <div class="card">
-      <span class="hero-tag-sublime"><span class="hero-dot-sublime"></span>Projeto Full-Stack · Em Produção</span>
-      <h1 class="section-title">Sublime Caixa - Sistema de Gestão para Salão de Beleza</h1>
-        <p>Sistema interno desenvolvido do zero para atender às necessidades de um salão de beleza real, cobrindo caixa, estoque, clientes e fichas técnicas. Desenvolvido e testado em paralelo - hoje em uso diário pelo cliente.</p>
+      <span class="hero-tag-sublime"><span class="hero-dot-sublime"></span>
+        <span class="lang-pt">Projeto Full-Stack · Em Produção</span>
+        <span class="lang-en">Full-Stack Project · In Production</span>
+      </span>
+      <h1 class="section-title">
+        <span class="lang-pt">Sublime Caixa - Sistema de Gestão para Salão de Beleza</span>
+        <span class="lang-en">Sublime Caixa - Management System for Beauty Salons</span>
+      </h1>
+        <p class="lang-pt">Sistema interno desenvolvido do zero para atender às necessidades de um salão de beleza real, cobrindo caixa, estoque, clientes e fichas técnicas. Desenvolvido e testado em paralelo - hoje em uso diário pelo cliente.</p>
+        <p class="lang-en">Internal system developed from scratch to meet the needs of a real beauty salon, covering cashier, inventory, clients, and technical records. Developed and tested in parallel - currently in daily use by the client.</p>
         <div class="pill-row">
           <span class="pill pill-purple">Python · Django</span>
           <span class="pill pill-purple">JavaScript</span>
@@ -36,17 +51,23 @@
         <div class="status-bar">
             <div class="status-dot"></div>
             <div>
-            <div class="status-text">Sistema ativo e em uso no espaço do cliente</div>
-            <div class="status-sub">Concluído · melhorias e novas funcionalidades em andamento</div>
+            <div class="status-text">
+                <span class="lang-pt">Sistema ativo e em uso no espaço do cliente</span>
+                <span class="lang-en">Active system in use at the client's location</span>
+            </div>
+            <div class="status-sub">
+                <span class="lang-pt">Concluído · melhorias e novas funcionalidades em andamento</span>
+                <span class="lang-en">Completed · improvements and new features in progress</span>
+            </div>
             </div>
         </div>
 
         <br>
-        <h3>Ciclo de Desenvolvimento</h3>
-        <!-- <ul>
-          <li><strong>Backend:</strong> Python</li>
-          <li><strong>Frontend:</strong> JavaScript, HTML, CSS</li>
-        </ul> -->
+        <h3>
+            <span class="lang-pt">Ciclo de Desenvolvimento</span>
+            <span class="lang-en">Development Cycle</span>
+        </h3>
+       
         <!-- Timeline -->
         <!-- <p class="section-label">Ciclo de desenvolvimento</p> -->
         <div class="timeline">
@@ -55,134 +76,218 @@
             <div class="tl-item">
             <div class="tl-dot">💡</div>
             <div class="tl-content">
-                <div class="tl-phase">Fase 01</div>
-                <div class="tl-title">Levantamento de requisitos</div>
-                <div class="tl-desc">Entendimento das necessidades do cliente, mapeamento das funcionalidades essenciais e definição do escopo inicial: caixa, estoque, clientes e fichas técnicas.</div>
+                <div class="tl-phase">
+                  <span class="lang-pt">Fase 01</span><span class="lang-en">Phase 01</span>
+                </div>
+                <div class="tl-title">
+                  <span class="lang-pt">Levantamento de requisitos</span>
+                  <span class="lang-en">Requirements gathering</span>
+                </div>
+                <div class="tl-desc">
+                  <span class="lang-pt">Entendimento das necessidades do cliente, mapeamento das funcionalidades essenciais e definição do escopo inicial: caixa, estoque, clientes e fichas técnicas.</span>
+                  <span class="lang-en">Understanding client needs, mapping essential features, and defining the initial scope: cashier, inventory, clients, and technical records.</span>
+                </div>
             </div>
             </div>
 
             <div class="tl-item">
             <div class="tl-dot">🏗️</div>
             <div class="tl-content">
-                <div class="tl-phase">Fase 02</div>
-                <div class="tl-title">Desenvolvimento inicial</div>
-                <div class="tl-desc">Início da programação com Django + PostgreSQL no back-end e HTML/CSS/JS no front-end. Foco em estabelecer a base do sistema e os fluxos principais.</div>
+                <div class="tl-phase">
+                  <span class="lang-pt">Fase 02</span><span class="lang-en">Phase 02</span>
+                </div>
+                <div class="tl-title">
+                  <span class="lang-pt">Desenvolvimento inicial</span>
+                  <span class="lang-en">Initial development</span>
+                </div>
+                <div class="tl-desc">
+                  <span class="lang-pt">Início da programação com Django + PostgreSQL no back-end e HTML/CSS/JS no front-end. Foco em estabelecer a base do sistema e os fluxos principais.</span>
+                  <span class="lang-en">Beginning of programming with Django + PostgreSQL on the back-end and HTML/CSS/JS on the front-end. Focus on establishing the system base and main flows.</span>
+                </div>
             </div>
             </div>
 
             <div class="tl-item">
-            <div class="tl-dot">🧪</div>
+            <div class="tl-dot">👩🏻‍💻</div>
             <div class="tl-content">
-                <div class="tl-phase">Fase 03</div>
-                <div class="tl-title">Desenvolvimento + testes em paralelo</div>
-                <div class="tl-desc">A partir da metade do projeto, os estudos de QA foram incorporados ao ciclo. Desenvolvimento e testes passaram a caminhar juntos, seguindo práticas de Scrum e Kanban. Cada funcionalidade entregue já saía com cobertura de testes.</div>
+                <div class="tl-phase">
+                  <span class="lang-pt">Fase 03</span><span class="lang-en">Phase 03</span>
+                </div>
+                <div class="tl-title">
+                  <span class="lang-pt">Desenvolvimento + testes em paralelo</span>
+                  <span class="lang-en">Development + testing in parallel</span>
+                </div>
+                <div class="tl-desc">
+                  <span class="lang-pt">A partir da metade do projeto, os estudos de QA foram incorporados ao ciclo. Desenvolvimento e testes passaram a caminhar juntos, seguindo práticas de Scrum e Kanban. Cada funcionalidade entregue já saía com cobertura de testes.</span>
+                  <span class="lang-en">From mid-project, QA studies were incorporated into the cycle. Development and testing started walking together, following Scrum and Kanban practices. Each delivered feature already had test coverage.</span>
+                </div>
             </div>
             </div>
 
             <div class="tl-item">
             <div class="tl-dot">🚀</div>
             <div class="tl-content">
-                <div class="tl-phase">Fase 04</div>
-                <div class="tl-title">Teste beta em produção</div>
-                <div class="tl-desc">Com as partes críticas estáveis e sem bugs bloqueadores, o sistema foi implantado no espaço do cliente. Surgiram novos requisitos de uso real e alguns bugs de produção foram identificados e corrigidos.</div>
-                <span class="badge-prod">✓ Sistema implantado no cliente</span>
+                <div class="tl-phase">
+                  <span class="lang-pt">Fase 04</span><span class="lang-en">Phase 04</span>
+                </div>
+                <div class="tl-title">
+                  <span class="lang-pt">Teste beta em produção</span>
+                  <span class="lang-en">Beta testing in production</span>
+                </div>
+                <div class="tl-desc">
+                  <span class="lang-pt">Com as partes críticas estáveis e sem bugs bloqueadores, o sistema foi implantado no espaço do cliente. Surgiram novos requisitos de uso real e alguns bugs de produção foram identificados e corrigidos.</span>
+                  <span class="lang-en">With critical parts stable and no blocking bugs, the system was deployed at the client's location. New real-use requirements emerged and some production bugs were identified and fixed.</span>
+                </div>
+                <span class="badge-prod">
+                  <span class="lang-pt">✓ Sistema implantado no cliente</span>
+                  <span class="lang-en">✓ System deployed at the client</span>
+                </span>
             </div>
             </div>
 
             <div class="tl-item">
             <div class="tl-dot">✅</div>
             <div class="tl-content">
-                <div class="tl-phase">Fase 05</div>
-                <div class="tl-title">Estabilização e melhorias contínuas</div>
-                <div class="tl-desc">Sistema 100% funcional em operação diária. Fase atual focada em evolução: novas funcionalidades conforme necessidades do negócio e refinamentos com base no uso real.</div>
+                <div class="tl-phase">
+                  <span class="lang-pt">Fase 05</span><span class="lang-en">Phase 05</span>
+                </div>
+                <div class="tl-title">
+                  <span class="lang-pt">Estabilização e melhorias contínuas</span>
+                  <span class="lang-en">Stabilization and continuous improvements</span>
+                </div>
+                <div class="tl-desc">
+                  <span class="lang-pt">Sistema 100% funcional em operação diária. Fase atual focada em evolução: novas funcionalidades conforme necessidades do negócio e refinamentos com base no uso real.</span>
+                  <span class="lang-en">100% functional system in daily operation. Current phase focused on evolution: new features according to business needs and refinements based on real use.</span>
+                </div>
             </div>
             </div>
         </div>
         <br>
         <!-- Stack -->
-        <h3>Stack utilizada</h3>
+        <h3>
+            <span class="lang-pt">Stack utilizada</span>
+            <span class="lang-en">Tech Stack</span>
+        </h3>
         <!-- <p class="section-label">Stack utilizada</p> -->
         <div class="stack-grid-sublime">
             <div class="stack-card-sublime">
             <div class="stack-icon-sublime">🐍</div>
             <h3>Python · Django</h3>
-            <p>Back-end, rotas, regras de negócio e ORM</p>
+            <p class="lang-pt">Back-end, rotas, regras de negócio e ORM</p>
+            <p class="lang-en">Back-end, routes, business rules and ORM</p>
             </div>
             <div class="stack-card-sublime">
             <div class="stack-icon-sublime">🎨</div>
             <h3>HTML · CSS · JS</h3>
-            <p>Front-end dinâmico com formulários e interações</p>
+            <p class="lang-pt">Front-end dinâmico com formulários e interações</p>
+            <p class="lang-en">Dynamic front-end with forms and interactions</p>
             </div>
             <div class="stack-card-sublime">
             <div class="stack-icon-sublime">🗄️</div>
             <h3>PostgreSQL</h3>
-            <p>Banco de dados relacional em produção</p>
+            <p class="lang-pt">Banco de dados relacional em produção</p>
+            <p class="lang-en">Relational database in production</p>
             </div>
             <div class="stack-card-sublime">
-            <div class="stack-icon-sublime">🌲</div>
+            <div class="stack-icon-sublime">💻</div>
             <h3>Cypress</h3>
-            <p>Testes E2E e regressão automatizados</p>
+            <p class="lang-pt">Testes E2E e regressão automatizados</p>
+            <p class="lang-en">Automated E2E and regression tests</p>
             </div>
             <div class="stack-card-sublime">
-            <div class="stack-icon-sublime">📮</div>
+            <div class="stack-icon-sublime">⛓️‍💥</div>
             <h3>Postman</h3>
-            <p>Testes manuais e automatizados de API REST</p>
+            <p class="lang-pt">Testes manuais e automatizados de API REST</p>
+            <p class="lang-en">Manual and automated REST API tests</p>
             </div>
             <div class="stack-card-sublime">
             <div class="stack-icon-sublime">📋</div>
             <h3>Kanban · Scrum</h3>
-            <p>Organização das demandas e entregas</p>
+            <p class="lang-pt">Organização das demandas e entregas</p>
+            <p class="lang-en">Organization of demands and deliveries</p>
             </div>
             <div class="stack-card-sublime">
             <div class="stack-icon-sublime">🎲</div>
             <h3>Chance.js</h3>
-            <p>Geração dinâmica de dados de teste</p>
+            <p class="lang-pt">Geração dinâmica de dados de teste</p>
+            <p class="lang-en">Dynamic test data generation</p>
             </div>
             <div class="stack-card-sublime">
             <div class="stack-icon-sublime">📊</div>
             <h3>DataTables</h3>
-            <p>Tabelas e relatórios com filtros</p>
+            <p class="lang-pt">Tabelas e relatórios com filtros</p>
+            <p class="lang-en">Tables and reports with filters</p>
             </div>
         </div>
 
         <br>
         <!-- Estratégia de testes -->
         <!-- <p class="section-label">Estratégia de testes</p> -->
-        <h3>Estratégia de testes</h3>
+        <h3>
+            <span class="lang-pt">Estratégia de testes</span>
+            <span class="lang-en">Test Strategy</span>
+        </h3>
         <div class="strategy-grid">
             <div class="strat-card">
             <div class="strat-icon">🎯</div>
-            <h3>Prioridade pelos caminhos críticos</h3>
-            <p>A estratégia partiu da pergunta: "qual parte não pode falhar?". A resposta foi <strong>caixa e estoque</strong> — o caixa por risco de faturamento incorreto, o estoque por risco de vender produtos indisponíveis. Esses módulos foram os primeiros a ter cobertura completa.</p>
+            <h3>
+              <span class="lang-pt">Prioridade pelos caminhos críticos</span>
+              <span class="lang-en">Priority on critical paths</span>
+            </h3>
+            <p class="lang-pt">A estratégia partiu da pergunta: "qual parte não pode falhar?". A resposta foi <strong>caixa e estoque</strong> — o caixa por risco de faturamento incorreto, o estoque por risco de vender produtos indisponíveis. Esses módulos foram os primeiros a ter cobertura completa.</p>
+            <p class="lang-en">The strategy started with the question: "which part cannot fail?". The answer was <strong>cashier and inventory</strong> — cashier for the risk of incorrect billing, inventory for the risk of selling unavailable products. These modules were the first to have full coverage.</p>
             </div>
             <div class="strat-card">
             <div class="strat-icon">📐</div>
-            <h3>Cobertura total intencional</h3>
-            <p>Optei por testar todas as partes do sistema, mesmo indo contra o princípio de que "testar tudo é inviável" — decisão consciente para aplicar na prática cada tipo de teste aprendido. Cobertura 100% foi definida como: todas as funcionalidades funcionando sem erros ou bugs críticos.</p>
+            <h3>
+              <span class="lang-pt">Cobertura total intencional</span>
+              <span class="lang-en">Intentional full coverage</span>
+            </h3>
+            <p class="lang-pt">Optei por testar todas as partes do sistema, mesmo indo contra o princípio de que "testar tudo é inviável" — decisão consciente para aplicar na prática cada tipo de teste aprendido. Cobertura 100% foi definida como: todas as funcionalidades funcionando sem erros ou bugs críticos.</p>
+            <p class="lang-en">I chose to test all parts of the system, even going against the principle that "testing everything is unfeasible" — a conscious decision to apply each type of learned test in practice. 100% coverage was defined as: all features working without errors or critical bugs.</p>
             </div>
             <div class="strat-card">
             <div class="strat-icon">🔄</div>
-            <h3>Regressão automatizada</h3>
-            <p>Suíte completa em Cypress cobrindo todos os fluxos de criação, edição e exclusão de cada módulo. Cada teste é independente, com seus próprios dados gerados dinamicamente para garantir repetibilidade e evitar colisão entre testes.</p>
+            <h3>
+              <span class="lang-pt">Regressão automatizada</span>
+              <span class="lang-en">Automated regression</span>
+            </h3>
+            <p class="lang-pt">Suíte completa em Cypress cobrindo todos os fluxos de criação, edição e exclusão de cada módulo. Cada teste é independente, com seus próprios dados gerados dinamicamente para garantir repetibilidade e evitar colisão entre testes.</p>
+            <p class="lang-en">Complete suite in Cypress covering all creation, editing, and deletion flows of each module. Each test is independent, with its own dynamically generated data to ensure repeatability and avoid collision between tests.</p>
             </div>
             <div class="strat-card">
-            <div class="strat-icon">🚦</div>
-            <h3>Smoke test manual no caixa</h3>
-            <p>O smoke test é focado exclusivamente no fluxo de venda: realizar uma venda com serviço e produto sem falhas. Executado manualmente por ser o caminho mais crítico do sistema e o que mais impacta diretamente o negócio do cliente.</p>
+            <div class="strat-icon">❗️</div>
+            <h3>
+              <span class="lang-pt">Smoke test manual no caixa</span>
+              <span class="lang-en">Manual smoke test on the cashier</span>
+            </h3>
+            <p class="lang-pt">O smoke test é focado exclusivamente no fluxo de venda: realizar uma venda com serviço e produto sem falhas. Executado manualmente por ser o caminho mais crítico do sistema e o que mais impacta diretamente o negócio do cliente.</p>
+            <p class="lang-en">The smoke test is focused exclusively on the sales flow: performing a sale with service and product without flaws. Executed manually as it is the most critical path of the system and the one that most directly impacts the client's business.</p>
             </div>
         </div>
         <br>
 
         <!-- Tipos de teste -->
         <!-- <p class="section-label">Tipos de teste aplicados</p> -->
-        <h3>Qualidade e Testes aplicados</h3>
-        <p>Como o foco da minha carreira é voltada para área de QA, este projeto foi o cenário principal para aplicar os seguintes testes:</p>
+        <h3>
+            <span class="lang-pt">Qualidade e Testes aplicados</span>
+            <span class="lang-en">Quality and Applied Testing</span>
+        </h3>
+        <p class="lang-pt">Como o foco da minha carreira é voltada para área de QA, este projeto foi o cenário principal para aplicar os seguintes testes:</p>
+        <p class="lang-en">As my career focus is on QA, this project was the main scenario for applying the following tests:</p>
 
         <div class="test-types">
             <div class="tt-card">
-            <div class="tt-label tt-label-purple">Automatizado · Cypress</div>
-            <div class="tt-title">Regressão E2E</div>
-            <div class="tt-desc">Fluxos completos de criação, edição e exclusão em todos os módulos. Cenários positivos e negativos com validação de mensagens de sucesso e erro.</div>
+            <div class="tt-label tt-label-purple">
+              <span class="lang-pt">Automatizado · Cypress</span><span class="lang-en">Automated · Cypress</span>
+            </div>
+            <div class="tt-title">
+              <span class="lang-pt">Regressão E2E</span><span class="lang-en">E2E Regression</span>
+            </div>
+            <div class="tt-desc">
+              <span class="lang-pt">Fluxos completos de criação, edição e exclusão em todos os módulos. Cenários positivos e negativos com validação de mensagens de sucesso e erro.</span>
+              <span class="lang-en">Complete creation, editing, and deletion flows in all modules. Positive and negative scenarios with validation of success and error messages.</span>
+            </div>
             <div class="tag-row-sublime">
                 <span class="tag-sublime tag-purple-sublime">data-test</span>
                 <span class="tag-sublime tag-purple-sublime">cy.contains</span>
@@ -190,68 +295,96 @@
             </div>
             </div>
             <div class="tt-card">
-            <div class="tt-label tt-label-amber">Manual · Postman</div>
-            <div class="tt-title">Testes de API REST</div>
-            <div class="tt-desc">Validação de status codes (200, 201, 400, 404, 409), regras de negócio, integridade de dados e tratamento de entradas inválidas com environment configurado.</div>
+            <div class="tt-label tt-label-amber">
+              <span class="lang-pt">Manual · Postman</span><span class="lang-en">Manual · Postman</span>
+            </div>
+            <div class="tt-title">
+              <span class="lang-pt">Testes de API REST</span><span class="lang-en">REST API Testing</span>
+            </div>
+            <div class="tt-desc">
+              <span class="lang-pt">Validação de status codes (200, 201, 400, 404, 409), regras de negócio, integridade de dados e tratamento de entradas inválidas com environment configurado.</span>
+              <span class="lang-en">Validation of status codes (200, 201, 400, 404, 409), business rules, data integrity, and invalid input handling with configured environment.</span>
+            </div>
             <div class="tag-row-sublime">
                 <span class="tag-sublime tag-amber-sublime">status codes</span>
-                <span class="tag-sublime tag-amber-sublime">positivo · negativo</span>
+                <span class="tag-sublime tag-amber-sublime">
+                  <span class="lang-pt">positivo · negativo</span><span class="lang-en">positive · negative</span>
+                </span>
                 <span class="tag-sublime tag-amber-sublime">environment</span>
             </div>
             </div>
             <div class="tt-card">
-            <div class="tt-label tt-label-teal">Manual · Documentado</div>
-            <div class="tt-title">Casos de Teste (CT001–CT035)</div>
-            <div class="tt-desc">Documentação completa com objetivo, pré-condições, passos e resultado esperado para cada cenário. Massa de dados padronizada por módulo.</div>
+            <div class="tt-label tt-label-teal">
+              <span class="lang-pt">Manual · Documentado</span><span class="lang-en">Manual · Documented</span>
+            </div>
+            <div class="tt-title">
+              <span class="lang-pt">Casos de Teste (CT001–CT035)</span><span class="lang-en">Test Cases (CT001–CT035)</span>
+            </div>
+            <div class="tt-desc">
+              <span class="lang-pt">Documentação completa com objetivo, pré-condições, passos e resultado esperado para cada cenário. Massa de dados padronizada por módulo.</span>
+              <span class="lang-en">Complete documentation with objectives, pre-conditions, steps, and expected results for each scenario. Standardized data mass by module.</span>
+            </div>
             <div class="tag-row-sublime">
-                <span class="tag-sublime tag-teal-sublime">roteiro</span>
-                <span class="tag-sublime tag-teal-sublime">massa de dados</span>
-                <span class="tag-sublime tag-teal-sublime">pré-condições</span>
+                <span class="tag-sublime tag-teal-sublime">
+                  <span class="lang-pt">roteiro</span><span class="lang-en">test script</span>
+                </span>
+                <span class="tag-sublime tag-teal-sublime">
+                  <span class="lang-pt">massa de dados</span><span class="lang-en">data mass</span>
+                </span>
+                <span class="tag-sublime tag-teal-sublime">
+                  <span class="lang-pt">pré-condições</span><span class="lang-en">pre-conditions</span>
+                </span>
             </div>
             </div>
         </div>
         
 
-        <!-- <h3>Qualidade e Testes (QA)</h3>
-        <p>Como o foco da minha carreira é voltada para área de QA, este projeto foi o cenário principal para aplicar:</p>
-        <ul>
-          <li><strong>Casos de Teste:</strong> Criação de casos de teste com todos os fluxos.</li>
-          <li><strong>Testes Manuais:</strong> Execução de testes funcionais e exploratórios.</li>
-          <li><strong>Gestão de Bugs:</strong> Identificação e correção de falhas críticas.</li>
-          <li><strong>Testes Automatizados:</strong> Implementação de fluxos E2E com Cypress.</li>
-          <li><strong>Testes de API:</strong> Validação de endpoints utilizando Postman.</li>
-          <li><strong>Testes de Regressão:</strong> Implementação de todos os fluxos listados pelos casos de teste com Cypress.</li>
-          
-          
-        </ul> -->
+        
         <br>
-        <h3>Funcionalidades e Regras de Negócio</h3>
-        <p>O sistema conta com controle de fluxo de caixa com histórico e registros de recibos, cadastro detalhado de clientes com fichas técnicas de procedimentos, gerenciamento de estoque com histórico de entrada e saída de produtos.</p>
+        <h3>
+            <span class="lang-pt">Funcionalidades e Regras de Negócio</span>
+            <span class="lang-en">Features and Business Rules</span>
+        </h3>
+        <p class="lang-pt">O sistema conta com controle de fluxo de caixa com histórico e registros de recibos, cadastro detalhado de clientes com fichas técnicas de procedimentos, gerenciamento de estoque com histórico de entrada e saída de produtos.</p>
+        <p class="lang-en">The system features cash flow control with history and receipt records, detailed customer registration with procedure technical records, and inventory management with product entry and exit history.</p>
 
         <details class="accordion-item">
           <summary class="accordion-header">
-            <h4 class="category">Clientes</h4>
+            <h4 class="category">
+                <span class="lang-pt">Clientes</span><span class="lang-en">Clients</span>
+            </h4>
             <span class="accordion-icon">▼</span>
           </summary>
           <div class="accordion-content">
-            <ul>
+            <ul class="lang-pt">
               <li>&#10003; Nome, telefone e NIF são campos obrigatórios para cadastro de cliente.</li>
-              <li>&#10003; Telefone valida se tem formato válido (ex.: apenas números no formato +XXX XXX XXX XXX).</li>
+              <li>&#10003; Telefone com formato e comprimento válido (ex.: apenas números no formato +351 XXX XXX XXX).</li>
               <li>&#10003; NIF deve ser único para cada cliente, valida se é padrão de Portugal (9 dígitos) e se outro cliente já possui o mesmo NIF.</li>
               <li>&#10003; Email, se preenchido, valida se tem formato válido.</li>
               <li>&#10003; Data de nascimento, se preenchido, valida se tem formato válido DD/MM/AAAA e ano deve ser ≤ ano atual.</li>
               <li>&#10003; Clientes ativos indica se o cliente ainda é atendido, enquanto clientes inativos não devem aparecer em buscas de venda ou cadastro de fichas.</li>
               <li>&#10003; Ao excluir cliente, as fichas devem ser removidas.</li>
             </ul>
+            <ul class="lang-en">
+              <li>&#10003; Name, phone and NIF are required fields for customer registration.</li>
+              <li>&#10003; Phone with valid format and length (e.g., only numbers in the format +351 XXX XXX XXX).</li>
+              <li>&#10003; NIF must be unique for each customer, validates if it follows the Portugal standard (9 digits) and if another customer already has the same NIF.</li>
+              <li>&#10003; Email, if filled in, validates if it has a valid format.</li>
+              <li>&#10003; Date of birth, if filled in, validates if it has a valid format DD/MM/YYYY and the year must be ≤ current year.</li>
+              <li>&#10003; Active customers indicate whether the customer is still being served, while inactive customers should not appear in sales searches or record creation.</li>
+              <li>&#10003; When deleting a customer, the records must be removed.</li>
+            </ul>
           </div>
         </details>
         <details class="accordion-item">
           <summary class="accordion-header">
-            <h4 class="category">Fichas de Atendimento</h4>
+            <h4 class="category">
+                <span class="lang-pt">Fichas de Atendimento</span><span class="lang-en">Service Records</span>
+            </h4>
             <span class="accordion-icon">▼</span>
           </summary>
           <div class="accordion-content">
-            <ul>
+            <ul class="lang-pt">
                 <li>&#10003; Cliente é obrigatório para fazer o cadastro da ficha</li>
                 <li>&#10003; Preço deve ser ≥ 0.</li>
                 <li>&#10003; Data do procedimento não pode ser uma data futura.</li>
@@ -261,15 +394,27 @@
                 <li>&#10003; Cada ficha deve registrar o valor do serviço/produto naquela data, não dependendo de atualizações futuras de preço do serviço/produto.</li>
                 <li>&#10003; Histórico: fichas ordenadas da mais recente para a mais antiga.</li>
             </ul>
+            <ul class="lang-en">
+                <li>&#10003; Customer is required to create a record</li>
+                <li>&#10003; Price must be ≥ 0.</li>
+                <li>&#10003; Procedure date cannot be a future date.</li>
+                <li>&#10003; Professional is optional, but essential to indicate who performed the service.</li>
+                <li>&#10003; Procedure, homecare and notes are optional, but have a character limit.</li>
+                <li>&#10003; When deleting a customer, all their records are deleted.</li>
+                <li>&#10003; Each record must store the service/product price at that date, not depending on future price updates of the service/product.</li>
+                <li>&#10003; History: records ordered from most recent to oldest.</li>    
+            </ul>
           </div>
         </details>
         <details class="accordion-item">
           <summary class="accordion-header">
-            <h4 class="category">Estoque</h4>
+            <h4 class="category">
+                <span class="lang-pt">Estoque</span><span class="lang-en">Inventory</span>
+            </h4>
             <span class="accordion-icon">▼</span>
           </summary>
           <div class="accordion-content">
-            <ul>
+            <ul class="lang-pt">
                 <li>&#10003; Nome e preço são obrigatórios.</li>
                 <li>&#10003; Preço deve ser &gt; 0.</li>
                 <li>&#10003; Quantidade não pode ser negativa, caso não tenha estoque ainda pode ser criado com quantidade 0 e ser atualizada posteriormente, a quantidade é controlada por entradas e saídas.</li>
@@ -292,35 +437,67 @@
                 </li>
                 <li>&#10003; Relatório do estoque filtra por data, cliente e produto, mostrando entradas, saídas e quantidade atual de cada produto.</li>
             </ul>
-          </div>
-        </details>
-        <details class="accordion-item">
-          <summary class="accordion-header">
-            <h4 class="category">Serviços</h4>
-            <span class="accordion-icon">▼</span>
-          </summary>
-          <div class="accordion-content">
-            <ul>
-                <li>&#10003; Nome e preco são obrigatórios.</li>
-                <li>&#10003; Preço deve ser &gt; 0.</li>
-                <li>&#10003; Preço do serviço deve ser congelado ao criar uma venda, preservando o valor no histórico das vendas antigas.</li>
+            <ul class="lang-en">
+              <li>&#10003; Name and price are required.</li>
+              <li>&#10003; Price must be &gt; 0.</li>
+              <li>&#10003; Quantity cannot be negative; if there is no stock yet, it can be created with quantity 0 and updated later. Quantity is controlled by stock in and out movements.</li>
+              <li>&#10003; It is not allowed to sell a product with insufficient stock.</li>
+              <li>&#10003; Stock movements must record type (in/out), quantity and date.</li>
+              <li>&#10003; Product may have an optional description.</li>
+              <li>&#10003; Products with quantity 0 must appear as “out of stock” in sales.</li>
+              <li>&#10003; Product and type (in/out) are required to perform a stock movement.</li>
+              <li>&#10003; Type must be either in or out only.</li>
+              <li>&#10003; When creating an out movement (sale at the cashier), it validates if the product has sufficient stock.</li>
+              <li>&#10003; Customer can be optional, but if filled it indicates that the out movement is linked to a sale.</li>
+              <li>&#10003; Stock movement
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;• In:
+                      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Adds quantity to stock through product editing.
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;• Out:
+                      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Checks if quantity &gt; 0.
+                      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Checks sufficient stock.
+                      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Creates a stock movement of type 'OUT'.
+                      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Associates customer, if provided.
+              </li>
+              <li>&#10003; Stock report filters by date, customer and product, showing in/out movements and current quantity of each product.</li>
             </ul>
           </div>
         </details>
         <details class="accordion-item">
           <summary class="accordion-header">
-            <h4 class="category">Caixa</h4>
+            <h4 class="category">
+                <span class="lang-pt">Serviços</span><span class="lang-en">Services</span>
+            </h4>
             <span class="accordion-icon">▼</span>
           </summary>
           <div class="accordion-content">
-            <ul>
+            <ul class="lang-pt">
+                <li>&#10003; Nome e preco são obrigatórios.</li>
+                <li>&#10003; Preço deve ser &gt; 0.</li>
+                <li>&#10003; Preço do serviço deve ser congelado ao criar uma venda, preservando o valor no histórico das vendas antigas.</li>
+            </ul>
+            <ul class="lang-en">
+                <li>&#10003; Name and price are mandatory.</li>
+                <li>&#10003; Price must be > 0.</li>
+                <li>&#10003; Service price must be frozen upon sale to preserve historical data.</li>
+            </ul>
+          </div>
+        </details>
+        <details class="accordion-item">
+          <summary class="accordion-header">
+            <h4 class="category">
+                <span class="lang-pt">Caixa</span><span class="lang-en">Cashier</span>
+            </h4>
+            <span class="accordion-icon">▼</span>
+          </summary>
+          <div class="accordion-content">
+            <ul class="lang-pt">
                 <li>&#10003; Cliente é opcional, mas essencial, caso não tenha o registro fica como “Não informado”.</li>
                 <li>&#10003; Data por padrão é a data e hora local do dispositivo.</li>
                 <li>&#10003; Desconto e sinal são opcionais, pode ser ≥ 0.</li>
                 <li>&#10003; Valor total deve ser > 0 (não pode ser negativo nem zero).</li>
                 <li>&#10003; Profissional opcional, mas essencial para informar quem realizou o atendimento.</li>
                 <li>&#10003; Forma de pagamento é obrigatório, deve ser uma das opções definidas.</li>
-                <li>&#10003; Quantidades sempre 1 por registro; multiplicar registro se necessário.</li>
+                <li>&#10003; Quantidades sempre 1 por registro; multiplicar registro se necessário.</li> <!-- QUE ISSO ????? -->
                 <li>&#10003; Fatura deve ser 'sim' ou 'nao' de acordo com desejo da cliente, caso não seja selecionado salva como 'nao'.</li>
                 <li>&#10003; Ao finalizar venda:
                     <br>&nbsp;&nbsp;&nbsp;&nbsp;- Valida estoque dos produtos (tem um campo no caixa mostrando a quantidade de estoque real).
@@ -333,96 +510,168 @@
                 <li>&#10003; Não permite vender mais do que estoque disponível.</li>
                 <li>&#10003; Atualizações de preço ou nome do produto/serviço não devem afetar vendas já registradas.</li>
             </ul>
+            <ul class="lang-en">
+                <li>&#10003; Client is optional but essential; if not registered, it stays as "Not informed".</li>
+                <li>&#10003; Date by default is the device's local date and time.</li>
+                <li>&#10003; Discount and down payment are optional, must be ≥ 0.</li>
+                <li>&#10003; Total value must be > 0 (cannot be negative or zero).</li>
+                <li>&#10003; Professional optional, but essential to inform who performed the service.</li>
+                <li>&#10003; Payment method is mandatory, must be one of the defined options.</li>
+                <li>&#10003; Quantities always 1 per entry; multiply the entry if necessary.</li>
+                <li>&#10003; Invoice must be 'yes' or 'no' according to the client's wish; if not selected, saves as 'no'.</li>
+                <li>&#10003; When finalizing a sale: 
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;- Validates product stock.
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;- Validates total value ≥ 0.
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;- Sold quantities are updated in stock. 
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;- Values are frozen in the receipt.</li>
+                <li>&#10003; At least product or service must be filled.</li>
+                <li>&#10003; Product or service quantity is always 1, if 2 are sold, they must be added twice.</li>
+                <li>&#10003; Product or service must be filled at the time of sale to freeze in history.</li>
+                <li>&#10003; Does not allow selling more than available stock.</li>
+                <li>&#10003; Price or name updates should not affect already registered sales.</li>
+            </ul>
           </div>
         </details>
         <br>
         <br>
         <!-- Destaques técnicos -->
         <!-- <p class="section-label">Destaques técnicos</p> -->
-        <h3>Destaques técnicos</h3>
+        <h3>
+          <span class="lang-pt">Destaques técnicos</span>
+          <span class="lang-en">Technical Highlights</span>
+        </h3>
         <div class="card-box-sublime">
             <div class="hl-item">
             <div class="hl-dot dot-purple"></div>
             <div class="hl-content">
-                <h4>Dados dinâmicos e independência entre testes</h4>
-                <p>Cada teste gera seus próprios dados via <code>gerarClientes()</code> com a biblioteca <code>chance.js</code> e <code>Date.now()</code>, garantindo nomes únicos e evitando colisão entre execuções. Isso torna a suíte repetível e confiável sem depender de dados pré-existentes.</p>
+                <h4>
+                  <span class="lang-pt">Dados dinâmicos e independência entre testes</span>
+                  <span class="lang-en">Dynamic data and test independence</span>
+                </h4>
+                <p class="lang-pt">Cada teste gera seus próprios dados via <code>gerarClientes()</code> com a biblioteca <code>chance.js</code> e <code>Date.now()</code>, garantindo nomes únicos e evitando colisão entre execuções. Isso torna a suíte repetível e confiável sem depender de dados pré-existentes.</p>
+                <p class="lang-en">Each test generates its own data via <code>gerarClientes()</code> with the <code>chance.js</code> library and <code>Date.now()</code>, ensuring unique names and avoiding collision between executions. This makes the suite repeatable and reliable without depending on pre-existing data.</p>
             </div>
             </div>
             <div class="hl-item">
             <div class="hl-dot dot-teal"></div>
             <div class="hl-content">
-                <h4>Seletores robustos com data-test</h4>
-                <p>Todos os elementos interativos foram marcados com atributos <code>data-test</code> no front-end durante o desenvolvimento, garantindo que mudanças de layout ou estilo não quebrem os testes automatizados.</p>
+                <h4>
+                  <span class="lang-pt">Seletores robustos com data-test</span>
+                  <span class="lang-en">Robust selectors with data-test</span>
+                </h4>
+                <p class="lang-pt">Todos os elementos interativos foram marcados com atributos <code>data-test</code> no front-end durante o desenvolvimento, garantindo que mudanças de layout ou estilo não quebrem os testes automatizados.</p>
+                <p class="lang-en">All interactive elements were marked with <code>data-test</code> attributes on the front-end during development, ensuring that layout or style changes do not break automated tests.</p>
             </div>
             </div>
             <div class="hl-item">
             <div class="hl-dot dot-amber"></div>
             <div class="hl-content">
-                <h4>Congelamento de dados em vendas</h4>
-                <p>Regra de negócio implementada e testada: nomes e preços de serviços e produtos são congelados no momento da venda para que alterações futuras de preço ou nome não afetem o histórico de vendas já registrado.</p>
+                <h4>
+                  <span class="lang-pt">Congelamento de dados em vendas</span>
+                  <span class="lang-en">Data freezing in sales</span>
+                </h4>
+                <p class="lang-pt">Regra de negócio implementada e testada: nomes e preços de serviços e produtos são congelados no momento da venda para que alterações futuras de preço ou nome não afetem o histórico de vendas já registrado.</p>
+                <p class="lang-en">Business rule implemented and tested: service and product names and prices are frozen at the time of sale so that future price or name changes do not affect the already registered sales history.</p>
             </div>
             </div>
             <div class="hl-item">
             <div class="hl-dot dot-coral"></div>
             <div class="hl-content">
-                <h4>Melhorias identificadas durante os testes</h4>
-                <p>Durante a automação, foram identificados pontos de melhoria no sistema: substituição de <code>window.confirm()</code> nativo por modais customizados na exclusão de fichas, e adição de mensagem de feedback ao excluir produtos — ambos documentados no código como pontos de evolução.</p>
+                <h4>
+                  <span class="lang-pt">Melhorias identificadas durante os testes</span>
+                  <span class="lang-en">Improvements identified during testing</span>
+                </h4>
+                <p class="lang-pt">Durante a automação, foram identificados pontos de melhoria no sistema: substituição de <code>window.confirm()</code> nativo por modais customizados na exclusão de fichas, e adição de mensagem de feedback ao excluir produtos — ambos documentados no código como pontos de evolução.</p>
+                <p class="lang-en">During automation, improvement points were identified in the system: replacing native <code>window.confirm()</code> with custom modals in record deletion, and adding a feedback message when deleting products — both documented in the code as evolution points.</p>
             </div>
             </div>
         </div>
         <br>
         <!-- Aprendizados -->
         <!-- <p class="section-label">O que aprendi e apliquei</p> -->
-        <h3>O que aprendi e apliquei</h3>
+        <h3>
+          <span class="lang-pt">O que aprendi e apliquei</span>
+          <span class="lang-en">What I learned and applied</span>
+        </h3>
         <div class="learnings">
             <div class="learn-card">
             <div class="learn-num">01</div>
             <div>
-                <h4>Desenvolvimento full-stack real</h4>
-                <p>Do levantamento de requisitos com o cliente à implementação completa com Django, JavaScript e PostgreSQL.</p>
+                <h4>
+                  <span class="lang-pt">Desenvolvimento full-stack real</span>
+                  <span class="lang-en">Real full-stack development</span>
+                </h4>
+                <p class="lang-pt">Do levantamento de requisitos com o cliente à implementação completa com Django, JavaScript e PostgreSQL.</p>
+                <p class="lang-en">From requirements gathering with the client to full implementation with Django, JavaScript, and PostgreSQL.</p>
             </div>
             </div>
             <div class="learn-card">
             <div class="learn-num">02</div>
             <div>
-                <h4>Desenvolvimento e QA em paralelo</h4>
-                <p>Aprender a testar enquanto desenvolve muda a forma de escrever código — você já pensa em testabilidade desde o início.</p>
+                <h4>
+                  <span class="lang-pt">Desenvolvimento e QA em paralelo</span>
+                  <span class="lang-en">Development and QA in parallel</span>
+                </h4>
+                <p class="lang-pt">Aprender a testar enquanto desenvolve muda a forma de escrever código — pensando em testabilidade desde o início.</p>
+                <p class="lang-en">Learning to test while developing changes the way you write code — you think about testability from the start.</p>
             </div>
             </div>
             <div class="learn-card">
             <div class="learn-num">03</div>
             <div>
-                <h4>Estratégia de testes com critério</h4>
-                <p>Definir o que testar primeiro, como garantir cobertura, o que vai para regressão e o que entra no smoke test.</p>
+                <h4>
+                  <span class="lang-pt">Estratégia de testes com critério</span>
+                  <span class="lang-en">Criteria-based test strategy</span>
+                </h4>
+                <p class="lang-pt">Definir o que testar primeiro, como garantir cobertura, o que vai para regressão e o que entra no smoke test.</p>
+                <p class="lang-en">Defining what to test first, how to ensure coverage, what goes to regression, and what enters the smoke test.</p>
             </div>
             </div>
             <div class="learn-card">
             <div class="learn-num">04</div>
             <div>
-                <h4>Testes de API com Postman</h4>
-                <p>Validação de status codes, regras de negócio e integridade de dados em uma API REST real com environment configurado.</p>
+                <h4>
+                  <span class="lang-pt">Testes de API com Postman</span>
+                  <span class="lang-en">API testing with Postman</span>
+                </h4>
+                <p class="lang-pt">Validação de status codes, regras de negócio e integridade de dados em uma API REST real com environment configurado.</p>
+                <p class="lang-en">Validation of status codes, business rules, and data integrity in a real REST API with configured environment.</p>
             </div>
             </div>
             <div class="learn-card">
             <div class="learn-num">05</div>
             <div>
-                <h4>Confiabilidade de testes automatizados</h4>
-                <p>Dados dinâmicos, independência entre testes e seletores estáveis como base para uma suíte que pode ser executada repetidamente.</p>
+                <h4>
+                  <span class="lang-pt">Confiabilidade de testes automatizados</span>
+                  <span class="lang-en">Reliability of automated tests</span>
+                </h4>
+                <p class="lang-pt">Dados dinâmicos, independência entre testes e seletores estáveis como base para uma suíte que pode ser executada repetidamente.</p>
+                <p class="lang-en">Dynamic data, independence between tests, and stable selectors as a basis for a suite that can be executed repeatedly.</p>
             </div>
             </div>
             <div class="learn-card">
             <div class="learn-num">06</div>
             <div>
-                <h4>Produção como o melhor laboratório</h4>
-                <p>Bugs que aparecem só em uso real ensinam mais do que qualquer ambiente de teste. O beta com o cliente revelou necessidades que não existiam no levantamento inicial.</p>
+                <h4>
+                  <span class="lang-pt">Produção como o melhor laboratório</span>
+                  <span class="lang-en">Production as the best laboratory</span>
+                </h4>
+                <p class="lang-pt">Bugs que aparecem só em uso real ensinam mais do que qualquer ambiente de teste. O beta com o cliente revelou necessidades que não existiam no levantamento inicial.</p>
+                <p class="lang-en">Bugs that appear only in real use teach more than any test environment. The beta with the client revealed needs that did not exist in the initial survey.</p>
             </div>
             </div>
         </div>
 
         <br>
-        <h3>Repositório no GitHub:</h3>
+        <h3>
+          <span class="lang-pt">Repositório no GitHub:</span>
+          <span class="lang-en">GitHub Repository:</span>
+        </h3>
         <p>
-        <a href="https://github.com/dorneleslet/SublimeCaixa-teste" target="_blank">Você pode ver o projeto clicando aqui</a>
+        <a href="https://github.com/dorneleslet/SublimeCaixa-teste" class="project-link" target="_blank">
+          <span class="lang-pt">Você pode ver o projeto clicando aqui</span>
+          <span class="lang-en">You can see the project by clicking here</span>
+        </a>
         </p>
       </div>
     </div>
@@ -431,5 +680,6 @@
   <footer class="container" style="text-align: center; padding: 2rem 0;">
     <p>&copy; 2026 Letícia Dorneles</p>
   </footer>
+  <script src="js/style.js"></script>
 </body>
 </html>
